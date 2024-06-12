@@ -1,0 +1,253 @@
+.red_text{
+    color: red;
+}
+
+
+
+
+.object-section {
+    padding: 4px 8px;
+}
+
+.object-header {
+    margin: 8px 0;
+}
+
+.object-header-line {
+    display: flex;
+    justify-content: space-between;
+    color: gray;
+    margin: 4px 8px;
+    font-size: 0.8em;
+    margin-bottom: 8px;
+}
+
+.object-description {
+    margin: 4px 20px;
+    font-size: 0.9em;
+    line-height: 140%;
+}
+
+.object-info-section {
+}
+
+.object-info-header,
+.object-info-header-v2 {
+    font-size: 1em;
+    font-weight: 500;
+    padding-left: 4px;
+    border-bottom: 1px solid gainsboro;
+    margin: 12px 0;
+    margin-bottom: 8px;
+}
+
+.object-info-header-v2 {
+    border-bottom: 0;
+}
+
+.details-object-header {
+    margin-bottom: 8px;
+}
+
+details.details-object-header[open] {
+    /*border-bottom: 0;*/
+}
+
+.details-object-header summary {
+    user-select: none;
+    border-bottom: 1px solid gainsboro;
+    cursor: pointer;
+    padding-bottom: 2px;
+}
+
+.details-object-header .details-object-header {
+}
+
+summary .object-info-property {
+    display: inline-flex;
+    margin: 4px 0;
+}
+
+.features-table {
+    width: 99%;
+}
+
+
+.object-info-property {
+    display: flex;
+    align-items: center;
+    margin: 4px 20px;
+    font-size: 0.9em;
+}
+
+.object-info-label {
+    width: 20em;
+    color: rgb(96,96,96);
+    padding: 4px 0;
+}
+
+.object-info-label-cell {
+    color: rgb(96,96,96);
+    padding: 4px 0;
+}
+
+.object-info-value {
+    flex: 1;
+}
+
+.object-info-value-cell {
+}
+
+.object-info-table {
+    border-collapse: collapse;
+}
+
+    .object-info-table th {
+        font-weight: 500;
+        color: rgb(96,96,96);
+        border: 1px solid gainsboro;
+    }
+
+    .object-info-table .th-bolder {
+        font-weight: 600;
+        color: rgb(64,64,64);
+    }
+
+    .object-info-table th,
+    .object-info-table td {
+        padding: 2px 4px;
+        border: 1px solid gainsboro;
+    }
+
+    .object-info-table th {
+        padding: 4px;
+    }
+
+        .object-info-table th.th-group-header {
+            color: black;
+            background-color: whitesmoke;
+            font-weight: 600;
+        }
+
+    .object-info-table caption {
+        text-align: left;
+        margin: 4px 0;
+    }
+
+    .object-info-table.v2 th {
+        padding: 2px;
+        color: black;
+    }
+
+
+.main-section {
+    flex: 1;
+    display: flex;
+}
+
+.main-list {
+    flex: 1;
+    border-right: 1px solid silver;
+}
+
+.main-selected {
+    flex: 1;
+}
+
+
+
+.user-ava-full {
+    height: 100px;
+    max-width: 100px;
+    margin: 4px;
+    border: 1px solid silver;
+}
+
+.user-ava-small {
+    height: 20px;
+    max-width: 20px;
+    margin: 2px;
+}
+
+.flex-row {
+    display: flex;
+}
+
+.flex-row-center {
+    display: flex;
+    align-items: center;
+}
+
+
+.text-smaller-09 {
+    font-size: 0.9em;
+}
+
+.text-smaller-085 {
+    font-size: 0.85em;
+}
+
+.text-smaller-08 {
+    font-size: 0.8em;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.close-object-btn {
+    margin: 0px 4px;
+    padding: 0px 2px;
+    color: red;
+    border: 1px solid transparent;
+    user-select: none;
+}
+
+    .close-object-btn:hover {
+        background-color: lightpink;
+        border-color: lightcoral;
+        cursor: pointer;
+    }
+
+
+button {
+    background-color: white;
+    border: 1px solid silver;
+    color: #638aa9;
+}
+
+    button:hover {
+        background-color: whitesmoke;
+    }
+
+    button:active {
+        background-color: gainsboro;
+    }
+
+
+
+.icon {
+    width: 14px;
+    height: 14px;
+    margin: 4px 2px;
+}
+
+.icon-14 {
+    width: 14px;
+    height: 14px;
+    margin: 4px 2px;
+}
+
+.icon-16 {
+    width: 16px;
+    height: 16px;
+    margin: 4px 2px;
+}

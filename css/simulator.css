@@ -1,0 +1,92 @@
+﻿body {
+    --highlited-color: #fff5e1;
+    --expanded-color: #e1ffea;
+    --header-color: rgb(245,245,255);
+}
+
+
+.sortable {
+    cursor: default;
+    user-select: none;
+}
+
+    .sortable:hover {
+        background: whitesmoke;
+    }
+
+
+.flex-row {
+    display: flex;
+}
+
+.flex-row-center {
+    display: flex;
+    align-items: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+button {
+    background-color: white;
+    border: 1px solid silver;
+    color: #638aa9;
+}
+
+    button:hover {
+        background-color: whitesmoke;
+    }
+
+    button:active {
+        background-color: gainsboro;
+    }
+
+
+.list-group-header {
+    background-color: rgb(245,245,255);
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+.no-headers .rumine-header.optionable{
+    display: none;
+}
+.rumine-header {
+    display: flex;
+    align-items: center;
+
+    background-color: rgb(245,245,255);
+    border: 1px solid gainsboro;
+
+    text-align: left;
+    padding: 4px;
+    margin: 0;
+}
+.rumine-header-icon{
+    
+}
+.rumine-header-h3 {
+    flex: 1;
+    margin: 2px;
+    font-size: 1.3em;
+}
+.rumine-header-h4 {
+    flex: 1;
+    margin: 0 2px;
+    font-size: 1.1em;
+}
+
+.event-action .object-link{
+    display: inline-block;
+    padding: 2px;
+}

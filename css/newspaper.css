@@ -1,0 +1,498 @@
+﻿
+.page-newspaper ::selection {
+    background-color: rgb(255, 218, 149);
+}
+.page-newspaper p {
+    line-height: 140%;
+}
+.page-newspaper .news {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13.5px;
+}
+/*.page-newspaper .news {
+    font-family: 'Roboto';
+    font-size: 1em;
+}
+*/
+
+.page-newspaper .main-body {
+    background-color: gainsboro;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.1em;
+
+    margin: auto;
+    min-width: 608px;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ЛОГОТИП */
+.page-newspaper .main-header {
+    padding: 15px;
+    border: 1px solid gray;
+    background-color: rgb(236, 236, 236);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+}
+    .page-newspaper .main-header h1 {
+        font-size: 48px;
+        margin: 0;
+    }
+    .page-newspaper .main-header img {
+        margin-right: 15px;
+        height: 80px;
+    }
+    .page-newspaper .main-header p {
+        margin: 0;
+    }
+    .page-newspaper .main-header .logo-date {
+        font-size: 1.3em;
+    }
+    .page-newspaper .main-header .logo-date-more {
+        display: none;
+        font-size: 0.75em;
+        color: gray;
+    }
+
+
+.page-newspaper .main-content {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    min-height: 80vh;
+}
+.page-newspaper .main-footer {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid gray;
+    background-color: rgb(236, 236, 236);
+}
+
+/* НАВИГАЦИЯ */
+.page-newspaper .nav-bar {
+    flex: 3;
+    border-right: 1px solid gray;
+    background-color: rgb(236, 236, 236);
+    padding: 0 2px;
+}
+.page-newspaper .content-navigation {
+    position: sticky;
+    top: 7em;
+}
+.page-newspaper h2.content-navigation-header {
+    margin: 6px 0;
+    font-size: 1.2em;
+}
+.page-newspaper .navigation-info{
+    color: gray;
+    font-size: 0.8em;
+    margin-bottom: 12px;
+}
+.page-newspaper .nav-links-section{
+    overflow-y: auto;
+    max-height: 78vh;
+    overflow-x: hidden;
+}
+
+.page-newspaper .newspaper-navigation{
+    display: flex;
+    margin: 4px;
+}
+.page-newspaper .news-next,
+.page-newspaper .news-prev{
+    flex: 1;
+    display: block;
+    padding: 2px;
+    text-decoration: none;
+    color: darkblue;
+}
+    .page-newspaper .news-next:visited,
+    .page-newspaper .news-prev:visited {
+        color: darkblue;
+    }
+    .page-newspaper .news-next:hover,
+    .page-newspaper .news-prev:hover {
+        color: blue;
+    }
+.page-newspaper .news-next.disabled,
+.page-newspaper .news-prev.disabled{
+    color: black;
+    cursor: default;
+    font-weight: 500;
+}
+.page-newspaper .news-next{
+    text-align: right;
+}
+.page-newspaper .news-prev{
+
+}
+
+/* ОСНОВНОЙ КОНТЕНТ ГАЗЕТЫ */
+.page-newspaper .newspaper-content {
+    flex: 7;
+    min-width: 325px;
+    max-width: 780px;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    background-color: whitesmoke;
+}
+
+.page-newspaper .header-news {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    /*justify-content: center;*/
+    padding: 8px 0.5em;
+    padding-top: 16px;
+    position: sticky;
+    top: 110px;
+    z-index: 1;
+    background-color: whitesmoke;
+}
+    .page-newspaper .header-news h2 {
+        margin: 0 4px;
+        font-size: 1.6em;
+    }
+.page-newspaper .news {
+    margin: 16px 0px;
+    clear: both;
+}
+.page-newspaper .entrance-block.news{
+    margin-top: 0px;
+}
+
+.page-newspaper .event-article {
+    margin-top: 10px;
+}
+
+.page-newspaper .event-header {
+    background-color: rgb(240,240,240);
+    padding: 4px 8px;
+    border-top: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
+}
+    .page-newspaper .event-header h3 {
+        margin: 2px 0;
+        font-size: 1.25em;
+    }
+.page-newspaper .event-date {
+    color: gray;
+    font-size: 1em;
+    font-weight: 600;
+}
+.page-newspaper .event-date-element {
+    display: inline-block;
+    display: none;
+    margin: 4px 12px;
+    padding: 2px 8px;
+    background-color: rgb(245,245,245);
+    border: 1px solid gainsboro;
+    margin-bottom: 0;
+}
+.page-newspaper .event-description {
+    color: gray;
+    font-size: 0.85em;
+}
+
+.page-newspaper .event-site .event-header h3{
+    color: green;
+}
+.page-newspaper .event-rumine .event-header h3 {
+    color: #e27c00;
+}
+.page-newspaper .event-important .event-header h3 {
+    color: red;
+}
+
+
+.page-newspaper .event-content {
+    padding: 4px 8px;
+}
+
+/* ЗАГОЛОВКИ */
+.page-newspaper .event-content h2{
+    margin: 2px 0;
+}
+    .page-newspaper .event-content h3 {
+        margin: 2px 0;
+    }
+    .page-newspaper .event-content h4 {
+        margin: 2px 0;
+    }
+    .page-newspaper .event-content h5 {
+        margin: 2px 0;
+        font-size: 1em;
+        border-bottom: 1px solid silver;
+    }
+/* ССЫЛКИ */
+.page-newspaper .news a {
+    text-decoration: none;
+    color: rgb(218, 141, 0);
+}
+    .page-newspaper .news a:hover {
+        text-decoration: underline;
+        color: orange;
+    }
+
+/* ЦИТАТЫ */
+.page-newspaper blockquote {
+    border-left: 4px solid orange;
+    padding-left: 8px;
+    margin-left: 20px;
+}
+    .page-newspaper blockquote .quote-content {
+        min-height: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+.page-newspaper blockquote p{
+    margin: 2px 0;
+}
+.page-newspaper blockquote cite{
+    font-style: normal;
+}
+.page-newspaper .cite-user {
+    align-items: center;
+}
+.page-newspaper img.mini-ava {
+    max-width: 20px;
+    max-height: 20px;
+    margin: 0 4px;
+}
+.page-newspaper .user-cite-content {
+    display: flex;
+    align-items: center;
+}
+.page-newspaper .news img.header-gif{
+    height: 20px;
+    margin: 0 6px;
+}
+.page-newspaper blockquote .quote-quote {
+    border: 1px solid gainsboro;
+    padding: 8px 4px;
+    background-color: #fbfbeb;
+}
+.page-newspaper blockquote .quote-quote-author {
+    border: 1px solid gainsboro;
+    padding: 4px;
+    background-color: #f7f5d3;
+    font-weight: 600;
+    color: rgb(64,64,64);
+}
+
+.page-newspaper .quotes blockquote {
+    margin-top: 14px;
+    margin-bottom: 14px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-right: 4px;
+    border-bottom: 1px solid gainsboro;
+    border-top: 1px solid gainsboro;
+    border-right: 1px solid gainsboro;
+}
+
+/* ИЗОБРАЖЕНИЯ */
+.page-newspaper .news figure {
+    border: 1px solid rgb(235,235,235);
+    padding: 4px;
+    border-radius: 2px;
+    margin: 2px 6px;
+    text-align: center;
+}
+    .page-newspaper .news figure img {
+        margin: 4px 0;
+        max-width: 800px;
+        max-height: 600px;
+    }
+    .page-newspaper .news figure p,
+    .page-newspaper .news figcaption {
+        text-align: center;
+        color: gray;
+    }
+.page-newspaper .news img {
+    margin: 4px;
+}
+.page-newspaper img.rage {
+    width: 40px;
+    vertical-align: middle;
+    margin: 0 2px;
+}
+
+.page-newspaper .event-content ul,
+.page-newspaper .event-content ol{
+    margin: 4px 0 4px 0;
+}
+    .page-newspaper .event-content ul li {
+        padding: 4px 0;
+    }
+        .page-newspaper .event-content ul li p {
+            margin: 4px 0;
+        }
+
+.page-newspaper .event-content .user-updates-list{
+    margin-top: 10px;
+}
+.page-newspaper .user-activity-list .user-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+        .page-newspaper .user-activity-list .user-item{
+            display: flex;
+            align-items: center;
+            margin: 0 4px;
+            font-size: 0.9em;
+            width: 10em;
+        }
+.page-newspaper .user-activity-list .user-activity-ava {
+    max-width: 16px;
+}
+
+.page-newspaper .news-list h5,
+.page-newspaper .news-list h4 {
+    margin: 0;
+}
+.page-newspaper .news-list h3 {
+    margin: 4px 0;
+    margin-left: 4px;
+}
+.page-newspaper .news-list .news-list-event-header{
+    display: flex;
+}
+.page-newspaper .news-list .news-list-event-date {
+    margin-right: 4px;
+    font-weight: 600;
+    color: gray;
+}
+.page-newspaper ul.news-list li{
+    padding: 6px 0;
+
+}
+.page-newspaper ul.news-list li b,
+.page-newspaper ul.news-list .bold{
+    font-weight: 500;
+}
+.page-newspaper ul.news-list blockquote{
+    border-left-width: 3px;
+}
+.page-newspaper .news-list ul li p{
+    margin: 1px 0;
+}
+.page-newspaper .news-list ul ul,
+.page-newspaper .news-list ul ol{
+
+}
+.page-newspaper .news-list li li{
+    padding: 2px 0;
+}
+.page-newspaper .news-list li li p {
+    margin: 2px 0;
+}
+
+.page-newspaper .news p {
+    margin-top: 6px;
+}
+
+
+.page-newspaper .gallery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.page-newspaper .gallery-header{
+    text-align: center;
+}
+.page-newspaper .gallery-item{
+    max-width: 28%;
+}
+
+.page-newspaper .content-navigation-header-row{
+    display: flex;
+    justify-content: space-between;
+}
+.page-newspaper .copy-link-button{
+    background-color: transparent;
+    margin: 0 4px;
+    align-self: flex-end;
+}
+.page-newspaper .copy-link-button:hover{
+    background-color: white;
+}
+    .page-newspaper .copy-link-button:active {
+        background-color: white;
+        border-color: gray;
+        color: black;
+    }
+
+
+/* ОБЩИЕ СТИЛИ */
+.page-newspaper .right {
+    float: right;
+}
+
+.page-newspaper .left {
+    float: left;
+}
+.page-newspaper .center {
+    text-align: center;
+}
+
+.page-newspaper .column {
+    display: flex;
+    flex-direction: column;
+}
+
+.page-newspaper .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.page-newspaper .inline {
+    display: inline-block;
+}
+
+.page-newspaper .hidden {
+    display: none;
+}
+.page-newspaper .clear {
+    clear: both;
+}
+
+.page-newspaper .inprogress {
+    background-color: #fffbca;
+}
+
+.page-newspaper .gazette-hidden{
+    display: none;
+}
+
+.page-newspaper .undefined {
+    background-color: pink;
+}
+.page-newspaper .line {
+    border-bottom: 2px solid gray;
+}
+.page-newspaper .bold{
+    font-weight: 600;
+}
+.page-newspaper .bigger-18{
+    font-size: 1.1em;
+}
+.page-newspaper .bigger-24 {
+    font-size: 1.2em;
+}
+.page-newspaper .bigger-32 {
+    font-size: 1.3em;
+}
+.page-newspaper .italic{
+    font-style: italic;
+}

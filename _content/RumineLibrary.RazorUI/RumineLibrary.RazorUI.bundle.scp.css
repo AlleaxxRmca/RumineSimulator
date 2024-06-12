@@ -1,0 +1,262 @@
+/* _content/RumineLibrary.RazorUI/Components/Collections/ComboBoxElement.razor.rz.scp.css */
+.option-select[b-5gbdq3eeu3] {
+    display: flex;
+}
+
+.option-header[b-5gbdq3eeu3] {
+    font-size: 0.8em;
+    margin: 2px 4px;
+    margin-right: 2px;
+    margin-left: 6px;
+}
+/* _content/RumineLibrary.RazorUI/Components/Collections/ListBoxElement.razor.rz.scp.css */
+.collection-list[b-ean721h32i] {
+}
+
+    .collection-list h4[b-ean721h32i] {
+        margin: 4px 8px;
+        border-bottom: 1px solid whitesmoke;
+    }
+
+.collection-list-ul[b-ean721h32i] {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+    .collection-list-ul.vertical[b-ean721h32i] {
+    }
+
+    .collection-list-ul.horizontal[b-ean721h32i] {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+.list-item[b-ean721h32i] {
+    padding: 4px 16px;
+    user-select: none;
+}
+
+.horizontal .list-item[b-ean721h32i] {
+    padding: 2px 4px;
+}
+
+.list-item.selected[b-ean721h32i] {
+    background-color: gainsboro;
+}
+
+.list-item.selectable:hover[b-ean721h32i] {
+    cursor: pointer;
+    background-color: whitesmoke;
+}
+
+.list-item.selectable.none-available[b-ean721h32i] {
+    background-color: inherit;
+    cursor: default;
+    color: gray;
+}
+
+.list-item.non-selectable[b-ean721h32i] {
+    user-select: auto;
+}
+
+    .list-item.non-selectable:hover[b-ean721h32i] {
+    }
+
+.list-item.nullable[b-ean721h32i] {
+}
+
+.filter-content[b-ean721h32i] {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 4px 0;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.list-group-header[b-ean721h32i] {
+    padding: 2px 8px;
+    background-color: whitesmoke;
+    border-top: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
+    font-size: 0.9em;
+}
+
+.horizontal .list-group-header[b-ean721h32i] {
+    width: 100%;
+}
+
+.pagination[b-ean721h32i] {
+    margin: 4px;
+}
+
+.pagination-info[b-ean721h32i] {
+    color: gray;
+    font-size: 0.8em;
+}
+
+.pagination-list[b-ean721h32i] {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.page-item[b-ean721h32i] {
+    padding: 2px 6px;
+    border: 1px solid silver;
+    margin: 0 2px;
+    user-select: none;
+    min-width: 20px;
+    text-align: center;
+}
+
+.page-current[b-ean721h32i] {
+    color: blue;
+    background-color: whitesmoke;
+}
+
+.page-blocked[b-ean721h32i] {
+    color: gray;
+}
+
+.page-available:hover[b-ean721h32i] {
+    color: royalblue;
+    cursor: pointer;
+    background-color: whitesmoke;
+}
+
+
+.list-view[b-ean721h32i] {
+    width: 99%;
+    margin: 4px 0;
+    font-size: 0.8em;
+    border-collapse: collapse;
+}
+
+    .list-view caption[b-ean721h32i] {
+        font-size: 1em;
+    }
+
+    .list-view .list-group-header[b-ean721h32i] {
+        padding: 4px;
+    }
+
+    .list-view th[b-ean721h32i] {
+    }
+
+    .list-view td[b-ean721h32i] {
+    }
+
+    .list-view .filter-row[b-ean721h32i] {
+    }
+/* _content/RumineLibrary.RazorUI/Components/ProgressBars/ProgressBarCompositeElement.razor.rz.scp.css */
+.progress-block[b-prco4hkqsv] {
+}
+
+.progress-bar[b-prco4hkqsv] {
+    background-color: whitesmoke;
+    transition-property: width;
+    border: 1px solid gray;
+    width: 100%;
+    border: 1px solid #c8c8c8;
+}
+
+.progress-bar-filled[b-prco4hkqsv] {
+    transition-duration: 0.4s;
+}
+
+.progress-text[b-prco4hkqsv] {
+    text-align: center;
+    font-size: 0.8em;
+    color: dimgray;
+    margin: 4px;
+}
+/* _content/RumineLibrary.RazorUI/Components/ProgressBars/ProgressBarElement.razor.rz.scp.css */
+.progress-block[b-6iawvv6o8f] {
+}
+
+.progress-bar[b-6iawvv6o8f] {
+    background-color: whitesmoke;
+    transition-property: width;
+    border: 1px solid gray;
+    width: 100%;
+    border: 1px solid #c8c8c8;
+}
+
+.progress-bar-filled[b-6iawvv6o8f] {
+    transition-duration: 0.4s;
+}
+
+.progress-text[b-6iawvv6o8f] {
+    text-align: center;
+    font-size: 0.8em;
+    color: dimgray;
+    margin: 4px;
+}
+/* _content/RumineLibrary.RazorUI/Components/ProgressBars/ProgressBarVerticalElement.razor.rz.scp.css */
+.progress-block[b-fbqfbqhxy2] {
+    height: 100%;
+}
+
+.progress-bar-vertical[b-fbqfbqhxy2] {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: whitesmoke;
+    transition-property: width;
+    border: 1px solid gray;
+    height: 100%;
+    border: 1px solid #c8c8c8;
+}
+
+.progress-bar-filled[b-fbqfbqhxy2] {
+    transition-duration: 0.4s;
+    align-self: flex-end;
+    width: 100%;
+}
+
+.progress-text[b-fbqfbqhxy2] {
+    text-align: center;
+    font-size: 0.8em;
+    color: dimgray;
+    margin: 4px;
+}
+/* _content/RumineLibrary.RazorUI/Components/Tabs/TabControlElement.razor.rz.scp.css */
+.tabset[b-cqj643gc4a] {
+}
+
+.tab-items[b-cqj643gc4a] {
+    list-style: none;
+    display: flex;
+    align-items: flex-end;
+    margin: 0;
+    padding-left: 0;
+    border-top: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
+    background-color: whitesmoke;
+    user-select: none;
+    flex-wrap: wrap;
+}
+
+.tab-content[b-cqj643gc4a] {
+    /*padding: 0.25em;*/
+}
+/* _content/RumineLibrary.RazorUI/Components/Tabs/TabItemElement.razor.rz.scp.css */
+.tab-item[b-zlned008rg] {
+    padding: 4px 12px;
+    border: 1px solid transparent;
+    font-size: 0.8em;
+}
+
+
+    .tab-item:hover[b-zlned008rg] {
+        cursor: pointer;
+        background-color: whitesmoke;
+        border: 1px solid silver;
+    }
+
+    .tab-item.selected[b-zlned008rg] {
+        background-color: gainsboro;
+        border: 1px solid silver;
+    }

@@ -1,0 +1,54 @@
+﻿
+.nav-misc .nav-link {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 4px 2px;
+    margin: 2px;
+    border: 1px solid gainsboro;
+}
+    .nav-misc .nav-link:hover {
+        color: blue;
+    }
+    .nav-misc .nav-link.active {
+        font-weight: 500;
+        color: orangered;
+        background: whitesmoke;
+        border: 1px solid silver;
+    }
+
+
+
+.scenario-link {
+    display: flex;
+    align-items: center;
+    padding: 4px 2px;
+    text-decoration: none;
+    color: black;
+}
+    .scenario-link.visited {
+        color: blue;
+    }
+.scenario-link:hover {
+    color: blue;
+}
+    .scenario-link.active {
+        color: orangered;
+        font-weight: 500;
+    }
+
+
+
+
+.ready-editions-list .pagination-info{
+    display: none;
+}
+.ready-editions-list .pagination-list {
+}
+
+.ready-editions-list .list-view .list-group-header {
+    background-color: transparent;
+    border-color: green;
+    border: 0;
+    border-bottom: 1px solid silver;
+}
