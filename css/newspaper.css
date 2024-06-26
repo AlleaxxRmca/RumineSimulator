@@ -1,54 +1,55 @@
 ﻿
+:root {
+    --newspaper-content-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --newspaper-headers-font: Georgia, 'Times New Roman', Times, serif;
+
+    --newspaper-content-line-height: 1.4rem;
+    --newspaper-content-font-size: 1em;
+    --newspaper-headers-font-size: 1.1em;
+}
 .page-newspaper ::selection {
     background-color: rgb(255, 218, 149);
 }
 .page-newspaper p {
-    line-height: 140%;
+    line-height: var(--newspaper-content-line-height);
+    color: rgb(45,45,45);
+    color: rgb(30,30,30);
 }
 .page-newspaper .news {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 13.5px;
+    font-family: var(--newspaper-content-font);
+    font-size: var(--newspaper-content-font-size);
 }
-/*.page-newspaper .news {
-    font-family: 'Roboto';
-    font-size: 1em;
-}
-*/
 
 .page-newspaper .main-body {
     background-color: gainsboro;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 1.1em;
-
+    font-family: var(--newspaper-content-font);
     margin: auto;
-    min-width: 608px;
-    max-width: 1200px;
+    max-width: 1150px;
     display: flex;
     flex-direction: column;
 }
 
 /* ЛОГОТИП */
 .page-newspaper .main-header {
-    padding: 15px;
+    font-family: var(--newspaper-headers-font);
+
+    padding: 1em;
     border: 1px solid gray;
     background-color: rgb(236, 236, 236);
-
     display: flex;
     flex-direction: row;
     align-items: center;
-
-
     position: sticky;
     top: 0px;
     z-index: 3;
 }
     .page-newspaper .main-header h1 {
-        font-size: 48px;
+        font-size: 2.4em;
         margin: 0;
     }
     .page-newspaper .main-header img {
-        margin-right: 15px;
-        height: 80px;
+        margin-right: 0.5em;
+        height: 4.2em;
     }
     .page-newspaper .main-header p {
         margin: 0;
@@ -66,10 +67,14 @@
 .page-newspaper .main-content {
     display: flex;
     flex-direction: row-reverse;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     min-height: 80vh;
+    justify-content: center;
 }
 .page-newspaper .main-footer {
+    font-family: var(--newspaper-headers-font);
+    font-size: var(--newspaper-headers-font-size);
+
     padding: 10px;
     text-align: center;
     border: 1px solid gray;
@@ -78,41 +83,55 @@
 
 /* НАВИГАЦИЯ */
 .page-newspaper .nav-bar {
-    flex: 3;
+    flex: 1;
+    min-width: 300px;
     border-right: 1px solid gray;
     background-color: rgb(236, 236, 236);
     padding: 0 2px;
 }
+@media (max-device-width:480px) {
+    .page-newspaper .nav-bar {
+        border-left: 1px solid gray;
+    }
+}
 .page-newspaper .content-navigation {
     position: sticky;
-    top: 7em;
+    top: 7.2em;
 }
 .page-newspaper h2.content-navigation-header {
+    font-family: var(--newspaper-headers-font);
+    font-size: var(--newspaper-headers-font-size);
     margin: 6px 0;
     font-size: 1.2em;
 }
 .page-newspaper .navigation-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     color: gray;
     font-size: 0.8em;
-    margin-bottom: 12px;
+    margin: 2px 8px;
 }
 .page-newspaper .nav-links-section{
     overflow-y: auto;
-    max-height: 78vh;
+    max-height: 70vh;
     overflow-x: hidden;
 }
 
 .page-newspaper .newspaper-navigation{
     display: flex;
     margin: 4px;
+    flex-wrap: wrap;
 }
 .page-newspaper .news-next,
-.page-newspaper .news-prev{
+.page-newspaper .news-prev {
     flex: 1;
     display: block;
     padding: 2px;
     text-decoration: none;
     color: darkblue;
+    font-family: var(--newspaper-headers-font);
+    font-size: var(--newspaper-headers-font-size);
 }
     .page-newspaper .news-next:visited,
     .page-newspaper .news-prev:visited {
@@ -134,36 +153,105 @@
 .page-newspaper .news-prev{
 
 }
+.page-newspaper .back-to-simulator {
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 4px;
+    font-family: var(--newspaper-headers-font);
+    font-size: var(--newspaper-headers-font-size);
+}
 
-/* ОСНОВНОЙ КОНТЕНТ ГАЗЕТЫ */
+.page-newspaper .details-navigation-content {
+    border-top: 1px solid silver;
+    margin: 0 4px;
+    margin-top: 4px;
+}
+.page-newspaper .details-navigation-editions {
+    margin: 0 4px;
+}
+    .page-newspaper .details-navigation-edition-lists {
+        overflow-y: auto;
+        max-height: 70vh;
+        overflow-x: hidden;
+    }
+    .page-newspaper .details-navigation-editions details {
+        padding: 0 12px;
+    }
+    .page-newspaper .details-navigation-editions details ::marker{
+        color: gray;
+    }
+    .page-newspaper .details-navigation-list{
+        padding: 0 1em;
+    }
+.page-newspaper .news-edition-link {
+    display: flex;
+    margin: 4px 2px;
+    font-size: 0.9em;
+    text-decoration: none;
+}
+.page-newspaper .news-edition-link:hover {
+    color: blue;
+    text-decoration: underline;
+}
+    .page-newspaper .news-edition-link:active {
+        color: darkblue;
+    }
+.page-newspaper .edition-icon {
+    max-height: 20px;
+    max-width: 20px;
+    margin: 0 4px;
+    margin-right: 8px;
+    opacity: 0.7;
+}
+.page-newspaper .news-edition-link.current-news {
+    font-weight: 600;
+    text-decoration: underline;
+}
+    .page-newspaper .news-edition-link.current-news .edition-icon {
+        opacity: 1;
+    }
+
+    /* ОСНОВНОЙ КОНТЕНТ ГАЗЕТЫ */
 .page-newspaper .newspaper-content {
-    flex: 7;
-    min-width: 325px;
-    max-width: 780px;
     border-left: 1px solid gray;
     border-right: 1px solid gray;
     background-color: whitesmoke;
+    flex: 1;
+    min-width: 65%;
+}
+@media (max-device-width:480px) {
+    .page-newspaper .newspaper-content {
+        border-top: 1px solid gray;
+    }
 }
 
 .page-newspaper .header-news {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: var(--newspaper-headers-font);
+    font-size: var(--newspaper-headers-font-size);
     font-size: 1.2em;
     display: flex;
     align-items: center;
     /*justify-content: center;*/
     padding: 8px 0.5em;
-    padding-top: 16px;
+    padding-top: 0.8em;
     position: sticky;
-    top: 110px;
+    top: 4.75em;
     z-index: 1;
     background-color: whitesmoke;
 }
+@media (max-device-width:480px) {
+    .page-newspaper .header-news {
+        top: 5.5em;
+    }
+}
     .page-newspaper .header-news h2 {
+        color: rgb(45,45,45);
         margin: 0 4px;
         font-size: 1.6em;
     }
 .page-newspaper .news {
-    margin: 16px 0px;
+    margin: 1em 0px;
     clear: both;
 }
 .page-newspaper .entrance-block.news{
@@ -181,7 +269,7 @@
     border-bottom: 1px solid gainsboro;
 }
     .page-newspaper .event-header h3 {
-        margin: 2px 0;
+        margin: 0.2em 0;
         font-size: 1.25em;
     }
 .page-newspaper .event-date {
@@ -203,13 +291,16 @@
     font-size: 0.85em;
 }
 
-.page-newspaper .event-site .event-header h3{
+.page-newspaper .event-site h3,
+.page-newspaper h4.event-size {
     color: green;
 }
-.page-newspaper .event-rumine .event-header h3 {
-    color: #e27c00;
+.page-newspaper .event-rumine h3,
+.page-newspaper h4.event-rumine {
+    color: #cd7100;
 }
-.page-newspaper .event-important .event-header h3 {
+.page-newspaper .event-important h3,
+.page-newspaper h4.event-important {
     color: red;
 }
 
@@ -223,29 +314,29 @@
     margin: 2px 0;
 }
     .page-newspaper .event-content h3 {
-        margin: 2px 0;
+        margin: 4px 0;
     }
     .page-newspaper .event-content h4 {
-        margin: 2px 0;
+        margin: 4px 0;
     }
     .page-newspaper .event-content h5 {
-        margin: 2px 0;
+        margin: 4px 0;
         font-size: 1em;
         border-bottom: 1px solid silver;
     }
 /* ССЫЛКИ */
 .page-newspaper .news a {
     text-decoration: none;
-    color: rgb(218, 141, 0);
+    color: rgb(196 127 0);
 }
     .page-newspaper .news a:hover {
         text-decoration: underline;
-        color: orange;
+        color: rgb(218, 141, 0);
     }
 
 /* ЦИТАТЫ */
 .page-newspaper blockquote {
-    border-left: 4px solid orange;
+    border-left: 3px solid orange;
     padding-left: 8px;
     margin-left: 20px;
 }
@@ -254,7 +345,7 @@
         display: flex;
         flex-direction: column;
     }
-.page-newspaper blockquote p{
+.page-newspaper .news blockquote p{
     margin: 2px 0;
 }
 .page-newspaper blockquote cite{
@@ -312,6 +403,7 @@
         margin: 4px 0;
         max-width: 800px;
         max-height: 600px;
+        max-width: 100%;
     }
     .page-newspaper .news figure p,
     .page-newspaper .news figcaption {
@@ -335,7 +427,7 @@
         padding: 4px 0;
     }
         .page-newspaper .event-content ul li p {
-            margin: 4px 0;
+            margin: 0;
         }
 
 .page-newspaper .event-content .user-updates-list{
@@ -356,6 +448,11 @@
     max-width: 16px;
 }
 
+@media (max-device-width:480px) {
+    .page-newspaper .news-list {
+        padding-left: 1.25em;
+    }
+}
 .page-newspaper .news-list h5,
 .page-newspaper .news-list h4 {
     margin: 0;
@@ -364,17 +461,34 @@
     margin: 4px 0;
     margin-left: 4px;
 }
-.page-newspaper .news-list .news-list-event-header{
+.page-newspaper .news-list h4{
+    font-size: 1.1em;
+}
+.page-newspaper .news-list .news-list-event-header {
     display: flex;
+    border-bottom: 1px solid gainsboro;
+    align-items: end;
+    /*padding: 2px;
+    border: 1px solid gainsboro;
+    background-color: rgb(240,240,240);*/
 }
 .page-newspaper .news-list .news-list-event-date {
     margin-right: 4px;
     font-weight: 600;
     color: gray;
 }
-.page-newspaper ul.news-list li{
+.page-newspaper .news-list .news-header-description{
+    flex: 1;
+    text-align: right;
+    margin: 0 8px;
+    font-size: 0.8em;
+    color: gray;
+}
+.page-newspaper .news-list .news-list-event-content{
+    margin: 0 4px;
+}
+.page-newspaper ul.news-list li {
     padding: 6px 0;
-
 }
 .page-newspaper ul.news-list li b,
 .page-newspaper ul.news-list .bold{
@@ -383,6 +497,9 @@
 .page-newspaper ul.news-list blockquote{
     border-left-width: 3px;
 }
+.page-newspaper .event-content ul.news-list li p{
+    margin: 0.5em 0;
+}
 .page-newspaper .news-list ul li p{
     margin: 1px 0;
 }
@@ -390,38 +507,61 @@
 .page-newspaper .news-list ul ol{
 
 }
-.page-newspaper .news-list li li{
+.page-newspaper .event-content ul.news-list li li{
     padding: 2px 0;
 }
-.page-newspaper .news-list li li p {
-    margin: 2px 0;
+.page-newspaper .event-content ul.news-list li li p {
+    margin: 0;
 }
 
 .page-newspaper .news p {
-    margin-top: 6px;
+    margin-top: 0.5em;
+    margin-bottom: 0.75em;
 }
 
 
 .page-newspaper .gallery{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
 }
 .page-newspaper .gallery-header{
     text-align: center;
 }
 .page-newspaper .gallery-item{
-    max-width: 28%;
+    max-width: 45%;
+    margin: 8px 6px;
+}
+.page-newspaper figure.gallery-item{
+    border: 0;
+}
+.page-newspaper figure.gallery-item img{
+    max-height: 240px;
 }
 
+.page-newspaper .summary-header {
+    font-family: var(--newspaper-headers-font);
+    font-size: var(--newspaper-headers-font-size);
+    display: inline-block;
+    width: 90%;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+.page-newspaper .summary-header h3{
+    font-size: 1em;
+    margin: 6px 0;
+    font-weight: 500;
+}
 .page-newspaper .content-navigation-header-row{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .page-newspaper .copy-link-button{
+    display: none;
     background-color: transparent;
     margin: 0 4px;
-    align-self: flex-end;
 }
 .page-newspaper .copy-link-button:hover{
     background-color: white;
@@ -433,14 +573,31 @@
     }
 
 
+    .page-newspaper table{
+        max-width: 100%;
+    }
+
+    .page-newspaper details summary{
+        cursor: pointer;
+    }
+
+
 /* ОБЩИЕ СТИЛИ */
 .page-newspaper .right {
     float: right;
 }
-
 .page-newspaper .left {
     float: left;
 }
+
+@media (max-device-width:480px) {
+    .page-newspaper .right,
+    .page-newspaper .left{
+        float: initial;
+    }
+}
+
+
 .page-newspaper .center {
     text-align: center;
 }
