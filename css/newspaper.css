@@ -63,6 +63,14 @@
         color: gray;
     }
 
+@media (max-device-width:480px) {
+    .page-newspaper .main-header {
+        position: initial;
+    }
+    .page-newspaper .main-header img{
+        height: 3em;
+    }
+}
 
 .page-newspaper .main-content {
     display: flex;
@@ -114,7 +122,7 @@
 }
 .page-newspaper .nav-links-section{
     overflow-y: auto;
-    max-height: 70vh;
+    max-height: 78vh;
     overflow-x: hidden;
 }
 
@@ -154,7 +162,7 @@
 
 }
 .page-newspaper .back-to-simulator {
-    width: 100%;
+    flex: 1;
     text-align: center;
     text-decoration: none;
     margin-bottom: 4px;
@@ -177,12 +185,15 @@
     }
     .page-newspaper .details-navigation-editions details {
         padding: 0 12px;
+        padding-right: 0;
+        margin-right: 0;
     }
     .page-newspaper .details-navigation-editions details ::marker{
         color: gray;
     }
     .page-newspaper .details-navigation-list{
         padding: 0 1em;
+        padding-right: 0.2em;
     }
 .page-newspaper .news-edition-link {
     display: flex;
@@ -206,7 +217,7 @@
 }
 .page-newspaper .news-edition-link.current-news {
     font-weight: 600;
-    text-decoration: underline;
+    border-bottom: 1px solid silver;
 }
     .page-newspaper .news-edition-link.current-news .edition-icon {
         opacity: 1;
@@ -242,7 +253,7 @@
 }
 @media (max-device-width:480px) {
     .page-newspaper .header-news {
-        top: 5.5em;
+        position: initial;
     }
 }
     .page-newspaper .header-news h2 {
@@ -290,6 +301,35 @@
     color: gray;
     font-size: 0.85em;
 }
+.page-newspaper .event-note .event-header {
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+.page-newspaper .event-note .event-header h3 {
+    font-size: 1.1em;
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+}
+    .page-newspaper .event-note .event-info {
+        font-size: 0.9em;
+    }
+    .page-newspaper .event-note .event-date{
+        font-weight: 400;
+    }
+
+.page-newspaper .event-material .event-header {
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    background-color: rgb(235,235,235);
+}
+    .page-newspaper .event-material .event-header h3 {
+    }
+.page-newspaper .event-material .event-info {
+}
+.page-newspaper .event-material .event-date {
+}
+
+
 
 .page-newspaper .event-site h3,
 .page-newspaper h4.event-size {
@@ -299,9 +339,17 @@
 .page-newspaper h4.event-rumine {
     color: #cd7100;
 }
+    .page-newspaper .event-rumine.event-note h3,
+    .page-newspaper h4.event-rumine.event-note {
+        color: #cd7100;
+    }
 .page-newspaper .event-important h3,
 .page-newspaper h4.event-important {
     color: red;
+}
+.page-newspaper .event-updates h3,
+.page-newspaper h4.event-updates {
+    color: darkblue;
 }
 
 
@@ -322,7 +370,7 @@
     .page-newspaper .event-content h5 {
         margin: 4px 0;
         font-size: 1em;
-        border-bottom: 1px solid silver;
+        color: rgb(45,45,45);
     }
 /* ССЫЛКИ */
 .page-newspaper .news a {
@@ -447,6 +495,9 @@
 .page-newspaper .user-activity-list .user-activity-ava {
     max-width: 16px;
 }
+.page-newspaper .user-activity-list h4{
+    font-weight: 500;
+}
 
 @media (max-device-width:480px) {
     .page-newspaper .news-list {
@@ -466,6 +517,7 @@
 }
 .page-newspaper .news-list .news-list-event-header {
     display: flex;
+    flex-wrap: wrap;
     border-bottom: 1px solid gainsboro;
     align-items: end;
     /*padding: 2px;
@@ -507,11 +559,40 @@
 .page-newspaper .news-list ul ol{
 
 }
+
+
+
 .page-newspaper .event-content ul.news-list li li{
     padding: 2px 0;
 }
 .page-newspaper .event-content ul.news-list li li p {
     margin: 0;
+}
+
+
+.page-newspaper .event-content ul.event-news-list{
+}
+.page-newspaper .event-content .event-news-list li {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+.page-newspaper .event-content .event-news-list li p{
+    margin-top: 0.5em;
+    margin-bottom: 0.75em;
+}
+
+.page-newspaper .famous-users .news-list h4 {
+    font-weight: 500;
+    font-size: 1em;
+}
+.page-newspaper .famous-users .user-cite-content {
+    align-items: flex-end;
+    margin: 0 2px;
+}
+.page-newspaper .famous-users img.mini-ava {
+    margin-bottom: 2px;
 }
 
 .page-newspaper .news p {
@@ -538,6 +619,14 @@
 }
 .page-newspaper figure.gallery-item img{
     max-height: 240px;
+    max-width: 100%;
+}
+
+
+@media (max-device-width:480px) {
+    .page-newspaper .gallery-item {
+        max-width: 100%;
+    }
 }
 
 .page-newspaper .summary-header {
@@ -557,6 +646,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.page-newspaper .period-info{
+    color: gray;
 }
 .page-newspaper .copy-link-button{
     display: none;
@@ -581,6 +673,71 @@
         cursor: pointer;
     }
 
+.page-newspaper .default-table,
+.page-newspaper .dialog-table {
+    border-collapse: collapse;
+}
+
+    .page-newspaper .default-table td,
+    .page-newspaper .dialog-table td {
+        border: 1px solid gainsboro;
+        padding: 4px;
+    }
+
+    .page-newspaper .default-table th,
+    .page-newspaper .dialog-table td {
+        border: 1px solid gainsboro;
+        padding: 4px;
+    }
+
+.page-newspaper .dialog-table {
+    width: 100%;
+}
+
+    .page-newspaper .dialog-table td,
+    .page-newspaper .dialog-table th {
+        border-left: 0;
+        border-right: 0;
+    }
+
+    .page-newspaper .dialog-table th {
+        border-bottom: 3px solid silver;
+        padding-top: 0.5em;
+        font-weight: 500;
+    }
+
+        .page-newspaper .dialog-table th > div {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+        }
+
+.page-newspaper .dialog-title {
+    font-size: 1.05em;
+}
+
+.page-newspaper .dialog-date {
+}
+
+.page-newspaper td.td-author {
+    width: 10em;
+    border-left: 1px solid gainsboro;
+}
+.page-newspaper td.td-content {
+    border-right: 1px solid gainsboro;
+}
+
+.page-newspaper .dialog-table td p {
+    margin: 0.5em 0;
+    font-size: 0.95em;
+}
+.page-newspaper .dialog-table .main-quote td{
+}
+.page-newspaper .dialog-table .main-quote .td-author {
+    border-left: 1px solid silver;
+}
+.page-newspaper .dialog-table .main-quote .td-content {
+}
 
 /* ОБЩИЕ СТИЛИ */
 .page-newspaper .right {
@@ -617,8 +774,20 @@
     display: inline-block;
 }
 
-.page-newspaper .hidden {
+.f-content{
     display: none;
+}
+.pre-f-content{
+
+}
+
+.page-newspaper .hidden,
+.newspaper .hidden{
+    display: none;
+}
+.page-newspaper .shown,
+.newspaper .shown{
+    display: initial;
 }
 .page-newspaper .clear {
     clear: both;
@@ -653,3 +822,31 @@
 .page-newspaper .italic{
     font-style: italic;
 }
+.page-newspaper .comment{
+    color: gray;
+    margin: 8px 4px;
+    border: 1px solid gainsboro;
+    border-radius: 1px;
+    padding: 4px;
+    background-color: rgb(240,240,240);
+}
+.page-newspaper .lined {
+    border-bottom: 1px solid silver;
+}
+
+.page-newspaper .quote-quote {
+    border: 1px solid gainsboro;
+    padding: 8px 4px;
+    background-color: #fbfbeb;
+}
+.page-newspaper .quote-quote-author {
+    border: 1px solid gainsboro;
+    padding: 4px;
+    background-color: #f7f5d3;
+    font-weight: 600;
+    color: rgb(64,64,64);
+}
+.page-newspaper .dialog-form{
+    margin: 1em 0;
+}
+
