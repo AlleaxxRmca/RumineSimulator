@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "RumineSimulator.StoryWebApp",
   "resources": {
-    "hash": "sha256-lnxyCjU+e2OvG8X3pzJ0TpASDmnKkmTZgheFwYxMS9E=",
+    "hash": "sha256-toHla9Dy9JqjeQfGjtIiHNfKX1smdUn/EYVfdZ97TqI=",
     "jsModuleNative": {
       "dotnet.native.8.0.7.o9pgi20m3q.js": "sha256-UUcwNYo9kMmaZKVvy5z5N+rCD/PoOtsQF6IuT1mIDgo="
     },
@@ -9,7 +9,7 @@
       "dotnet.runtime.8.0.7.urcsr75yt5.js": "sha256-soZyw6XWXOLKhA26AOyzSpCP5cAsw1wvhdPHSYNTMfQ="
     },
     "wasmNative": {
-      "dotnet.native.wasm": "sha256-acQryn9CFICbBqSILk8pJ8j0BA3y4jBBuzsPV0kULAk="
+      "dotnet.native.wasm": "sha256-EW8qTsvjUR+asJseYbp9CQTQS54C/nO3daCuSROIkQw="
     },
     "icu": {
       "icudt_CJK.dat": "sha256-SZLtQnRc0JkwqHab0VUVP7T3uBPSeYzxzDnpxPpUnHk=",
@@ -34,7 +34,7 @@
       "RumineLibrary.RazorUI.wasm": "sha256-bq5fMk6wGsqIqZ1zPdbOuE1wRIZghqXQrHvaPbcqZdU=",
       "RumineLibrary.wasm": "sha256-kuhaOyfZeG4J14xfhiEJp1uavcs5DfVPmiRbYK9NS5g=",
       "RumineSimulator.Historical.wasm": "sha256-Jwi7BgOiTHQ9sFgmoEkADlkGZJBiIPxTY4iU07zZf1Q=",
-      "RumineSimulator.StoryWebApp.wasm": "sha256-ciHZjFfBONiKGHU61H0nkDBWZ2gMJoRAxgQfmzRrkJI=",
+      "RumineSimulator.StoryWebApp.wasm": "sha256-qU57iZPwuKW/ohsVZc7Y6sADXv8msKJmStmKeQT0UjU=",
       "System.Collections.Concurrent.wasm": "sha256-hP3QUQbTy/KUCFdgNW6seCDvHZeh2pbVr/hVNAnwFSs=",
       "System.Collections.wasm": "sha256-+775n8T521w0lsSrwa/OX5WsTBVLq15Ynu2REJIJkbU=",
       "System.ComponentModel.Primitives.wasm": "sha256-w+ws5+Xpu+flDed9Fvjh/6+q/4aHgR1r3x5vQzmbhx8=",
