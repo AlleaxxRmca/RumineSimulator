@@ -125,6 +125,11 @@
     max-height: 78vh;
     overflow-x: hidden;
 }
+@media (max-device-width:480px) {
+    .page-newspaper .nav-links-section {
+        max-height: 100%;
+    }
+}
 
 .page-newspaper .newspaper-navigation{
     display: flex;
@@ -278,11 +283,27 @@
     padding: 4px 8px;
     border-top: 1px solid gainsboro;
     border-bottom: 1px solid gainsboro;
+    border-width: 2px;
 }
     .page-newspaper .event-header h3 {
         margin: 0.2em 0;
+        margin-top: 0;
         font-size: 1.25em;
+        color: rgb(45, 45, 45);
     }
+    .page-newspaper .header-caption-row{
+        display: flex;
+        flex-direction: row;
+    }
+    .page-newspaper .event-header img.event-icon {
+        width: 22px;
+        opacity: 0.75;
+        margin: 0;
+        padding: 0 2px;
+        margin-right: 0.4em;
+        border-radius: 1px;
+    }
+
 .page-newspaper .event-date {
     color: gray;
     font-size: 1em;
@@ -441,11 +462,13 @@
 
 /* ИЗОБРАЖЕНИЯ */
 .page-newspaper .news figure {
-    border: 1px solid rgb(235,235,235);
     padding: 4px;
     border-radius: 2px;
     margin: 2px 6px;
     text-align: center;
+}
+.page-newspaper .creations figure{
+    border: 1px solid rgb(235, 235, 235);
 }
     .page-newspaper .news figure img {
         margin: 4px 0;
@@ -518,7 +541,7 @@
 .page-newspaper .news-list .news-list-event-header {
     display: flex;
     flex-wrap: wrap;
-    border-bottom: 1px solid gainsboro;
+    border-bottom: 2px solid gainsboro;
     align-items: end;
     /*padding: 2px;
     border: 1px solid gainsboro;
@@ -725,18 +748,21 @@
 }
 .page-newspaper td.td-content {
     border-right: 1px solid gainsboro;
+
+}
+/* Эксперимент */
+.page-newspaper .event-article td.td-author,
+.page-newspaper .event-article td.td-content {
+    border: 0;
+}
+.page-newspaper .event-article .dialog-table .user-cite-content{
+    border-left: 3px solid orange;
+    padding: 4px 6px;
 }
 
 .page-newspaper .dialog-table td p {
     margin: 0.5em 0;
     font-size: 0.95em;
-}
-.page-newspaper .dialog-table .main-quote td{
-}
-.page-newspaper .dialog-table .main-quote .td-author {
-    border-left: 1px solid silver;
-}
-.page-newspaper .dialog-table .main-quote .td-content {
 }
 
 /* ОБЩИЕ СТИЛИ */
@@ -772,13 +798,6 @@
 
 .page-newspaper .inline {
     display: inline-block;
-}
-
-.f-content{
-    display: none;
-}
-.pre-f-content{
-
 }
 
 .page-newspaper .hidden,
@@ -850,3 +869,15 @@
     margin: 1em 0;
 }
 
+
+.f-content {
+    display: none;
+}
+
+.pre-f-content {
+}
+@media (max-device-width:480px) {
+    .f-content {
+        display: initial;
+    }
+}
