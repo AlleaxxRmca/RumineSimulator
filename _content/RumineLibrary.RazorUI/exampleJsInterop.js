@@ -17,8 +17,8 @@ export function writeTextClipboard(text) {
 export function installNewsNavigationHighlight() {
     const highlightClass = "nav-highlight";
     const logoHeight = document.querySelector(".main-header").clientHeight;
-    const headerNewsHeight = 75;
-    const freeSpace = 40;
+    const headerNewsHeight = 0;
+    const freeSpace = 0;
 
     var fixedHeight = headerNewsHeight + logoHeight + freeSpace;
     fixedHeight = -fixedHeight;
@@ -29,7 +29,6 @@ export function installNewsNavigationHighlight() {
         if (navigatableElements.length == 0) {
             return;
         }
-
         //Находим первый пролистанный
         var minDiffElement = {
             element: undefined,
