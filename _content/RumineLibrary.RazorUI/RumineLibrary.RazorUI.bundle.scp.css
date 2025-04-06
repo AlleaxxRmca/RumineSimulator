@@ -102,6 +102,9 @@
     margin: 0;
     padding: 0;
 }
+.collection-list .pagination[b-ean721h32i]{
+    font-size: 0.9em;
+}
 
 .page-item[b-ean721h32i] {
     padding: 2px 6px;
