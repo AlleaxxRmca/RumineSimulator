@@ -11,6 +11,15 @@
 
     --newspaper-mainquote-color: orange;
     --newspaper-offquote-color: lightgreen;
+
+    --padding-left-icon: 4px;
+    --padding-left-text: 10px;
+    --padding-left-meta: 30px;
+    --padding-left-text: 52px;
+
+    --padding-content: 4px 10px;
+
+    --icon-ava-height: 18px;
 }
 .page-newspaper ::selection {
     background-color: rgb(255, 218, 149);
@@ -40,8 +49,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    position: sticky;
-    top: 0px;
+
     z-index: 3;
 }
     .page-newspaper .main-header h1 {
@@ -58,20 +66,16 @@
     .page-newspaper .main-header .logo-date {
         font-size: 1.3em;
     }
-    .page-newspaper .main-header .logo-date-more {
-        display: none;
-        font-size: 0.75em;
+    .page-newspaper .edition-release-date {
+        margin: 4px 1em;
+        font-size: 0.9em;
         color: gray;
     }
 
     @media (max-device-width:480px) {
-        .page-newspaper .main-header {
-            position: initial;
+        .page-newspaper .main-header img {
+            height: 3em;
         }
-
-            .page-newspaper .main-header img {
-                height: 3em;
-            }
     }
 /* #endregion */
 
@@ -107,6 +111,7 @@
 }
 
 /* #region НАВИГАЦИЯ */
+
 .page-newspaper .nav-bar {
     flex: 1;
     min-width: 300px;
@@ -121,7 +126,7 @@
 }
 .page-newspaper .content-navigation {
     position: sticky;
-    top: 7.2em;
+    top: 1em;
 }
 .page-newspaper h2.content-navigation-header {
     font-family: var(--newspaper-headers-font);
@@ -138,10 +143,10 @@
     font-size: 0.8em;
     margin: 2px 8px;
 }
-.page-newspaper .nav-links-section{
+.page-newspaper .nav-links-section {
     overflow-y: auto;
-    max-height: 79vh;
     overflow-x: hidden;
+    max-height: 88vh;
 }
 @media (max-device-width:480px) {
     .page-newspaper .nav-links-section {
@@ -149,6 +154,7 @@
     }
 }
 
+/* блок вперед-назад */
 .page-newspaper .newspaper-navigation{
     display: flex;
     margin: 4px;
@@ -193,6 +199,8 @@
     font-size: var(--newspaper-headers-font-size);
 }
 
+
+/* список газетных изданий */
 .page-newspaper .details-navigation-content {
     margin: 0 4px;
     margin-top: 2px;
@@ -244,27 +252,32 @@
     .page-newspaper .news-edition-link.current-news .edition-icon {
         opacity: 1;
     }
+
+/* спойлеры навигации */
+.page-newspaper .summary-header {
+    font-family: var(--newspaper-headers-font);
+    font-size: var(--newspaper-headers-font-size);
+    display: inline-block;
+    width: 90%;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+    .page-newspaper .summary-header h3 {
+        font-size: 1em;
+        margin: 6px 0;
+        font-weight: 500;
+    }
+
+.page-newspaper .content-navigation-header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 /* #endregion */
 
-/* #region Заголовки в событиях */
-.page-newspaper .news-content h2 {
-    margin: 2px 0;
-}
-
-.page-newspaper .news-content h3 {
-    margin: 4px 0;
-}
-
-.page-newspaper .news-content h4 {
-    margin: 4px 0;
-}
-
-.page-newspaper .news-content h5 {
-    margin: 4px 0;
-    font-size: 1em;
-    color: rgb(45,45,45);
-}
-/* #endregion */
+/* #region РАЗДЕЛЫ ГАЗЕТЫ */
 
 .page-newspaper .news-section {
     font-family: var(--newspaper-content-font);
@@ -276,7 +289,86 @@
         margin-top: 0px;
     }
 
-/*#region Заголовок раздела газеты */
+/* #endregion */
+
+/* #region СТИЛИ ДЛЯ СОДЕРЖАНИЯ РАЗДЕЛОВ (news-section) */
+
+/*заголовки*/
+.page-newspaper .news-content h2 {
+    margin: 2px 0;
+}
+.page-newspaper .news-content h3 {
+    margin: 4px 0;
+}
+.page-newspaper .news-content h4 {
+    margin: 4px 0;
+}
+.page-newspaper .news-content h5 {
+    margin: 4px 0;
+    font-size: 1em;
+    color: rgb(45,45,45);
+}
+
+/* текст */
+.page-newspaper .news-section p {
+    margin-top: 0.5em;
+    margin-bottom: 0.75em;
+}
+.page-newspaper .news-section details {
+    margin-top: 0.5em;
+    margin-bottom: 0.75em;
+}
+
+/* ссылки */
+.page-newspaper .news-section a {
+    text-decoration: none;
+    color: rgb(196 127 0);
+}
+    .page-newspaper .news-section a:hover {
+        text-decoration: underline;
+        color: rgb(218, 141, 0);
+    }
+
+/* изображения */
+.page-newspaper .news-section img {
+    margin: 4px;
+}
+.page-newspaper img.rage {
+    width: 40px;
+    vertical-align: middle;
+    margin: 0 2px;
+}
+.page-newspaper .news-section .mini-ava {
+    max-width: 18px;
+    max-height: 18px;
+    margin: 0;
+    margin-right: 4px;
+}
+
+/* #endregion */
+
+.page-newspaper .news-content {
+    padding: var(--padding-content);
+}
+
+/* #region ОБЩИЕ СТИЛИ ДЛЯ СОДЕРЖАНИЯ (news-content) */
+
+/* списки */
+.page-newspaper .news-content ul,
+.page-newspaper .news-content ol {
+    margin: 4px 0 4px 0;
+}
+    .page-newspaper .news-content ul li {
+        padding: 4px 0;
+    }
+        .page-newspaper .news-content ul li p {
+            margin: 0;
+        }
+
+/* #endregion */
+
+/*#region ЗАГОЛОВКИ РАЗДЕЛОВ */
+
 .page-newspaper .news-section-header {
     font-family: var(--newspaper-headers-font);
     font-size: var(--newspaper-headers-font-size);
@@ -284,12 +376,13 @@
     display: flex;
     align-items: center;
     padding: 8px 0.5em;
-    padding-top: 0.8em;
     position: sticky;
-    top: 4.75em;
     z-index: 1;
     background-color: whitesmoke;
     border-bottom: 2px solid gray;
+
+    top: -4px;
+    padding-top: 0.5em;
 }
 .page-newspaper .news-section img.header-gif {
     max-height: 30px;
@@ -306,114 +399,101 @@
         position: initial;
     }
 }
+
 /* #endregion */
 
+/* #region БЛОКИ РАЗДЕЛОВ (СОБЫТИЯ И КОНТЕКСТНЫЕ) */
 
 .page-newspaper .event-article {
     margin-top: 6px;
-    /*padding-bottom: 10px;*/
 }
-.page-newspaper .work-in-progress{
-    background-color: lightyellow;
-}
-.page-newspaper .rumine-news-link {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+.page-newspaper .context-section {
+    margin-bottom: 12px;
 }
 
 
-/* #region Заголовок события */
+.page-newspaper .quotes {
+    padding: 1em 0;
+}
+.page-newspaper .creations {
+    padding: 1em 0;
+    padding-bottom: 0;
+}
+.page-newspaper .event-article + .context-section > .creations:first-child {
+    border-top: 1px solid silver;
+}
+
+/* #endregion */
+
+/* #region КРАТКОЕ СОДЕРЖАНИЕ НОВОСТЕЙ */
+
+
+
+/* #endregion */
+
+/* #region ЗАГОЛОВКИ СОБЫТИЙ */
+
 .page-newspaper .event-header {
     display: flex;
-    flex-direction: row;
     align-items: center;
+
     background-color: var(--newspaper-headers-background);
-    padding: 4px 8px;
+    padding: var(--padding-content);
     font-size: 1em;
     border-top: 2px solid silver;
     border-bottom: 2px solid silver;
 }
+
     .page-newspaper .event-header .event-title {
-        margin: 0.2em 0;
-        margin-top: 0;
+        margin: 0;
         font-size: 1.25em;
         color: rgb(64, 64, 64);
-        margin-bottom: 2px;
     }
 
     .page-newspaper .event-header img.event-icon {
-        width: 22px;
-        opacity: 0.9;
+        width: 24px;
+        opacity: 0.8;
         margin: 0;
         padding: 2px;
-        margin-right: 0.4em;
-        border: 1px solid transparent;
-        border-bottom-width: 2px;
+        margin-right: 6px;
+        border: 2px solid transparent;
+        border-bottom-width: 3px;
         border-radius: 2px;
     }
-.page-newspaper .important-event .event-header img.event-icon {
-    border-width: 3px;
-    border-bottom-width: 3px;
-}
+    .page-newspaper .important-event img.event-icon {
+        border-width: 3px;
+        border-bottom-width: 3px;
+    }
+    .page-newspaper .note-event img.event-icon {
+        border-color: silver !important;
+    }
 
 .page-newspaper .event-date {
     color: gray;
     font-size: 1em;
     font-weight: 600;
 }
-.page-newspaper .event-header.header-caption-row .event-date {
-    font-size: 0.9em;
-}
 .page-newspaper .event-description {
     color: gray;
     font-size: 0.85em;
 }
-/* #endregion */
-
-.page-newspaper .news-content {
-    padding: 4px 8px;
+.page-newspaper .note-event .event-title {
+    color: rgb(72, 72, 72);
 }
-.page-newspaper .news-section p {
-    margin-top: 0.5em;
-    margin-bottom: 0.75em;
-}
-.page-newspaper .news-section details {
-    margin-top: 0.5em;
-    margin-bottom: 0.75em;
-}
-
-.page-newspaper .news-section-nav-header {
-    color: rgb(32,32,32);
-}
-.page-newspaper .news-section-nav {
-    margin: 0.5em 0;
-    margin-top: 0;
-    padding-top: 0;
-}
-
-
-/* #region ССЫЛКИ */
-.page-newspaper .news-section a {
-    text-decoration: none;
-    color: rgb(196 127 0);
-}
-    .page-newspaper .news-section a:hover {
-        text-decoration: underline;
-        color: rgb(218, 141, 0);
-    }
 /* #endregion */
 
 /* #region ЦИТАТЫ */
+
 .page-newspaper blockquote {
     border-left: 3px solid;
     border-left-color: var(--newspaper-mainquote-color);
     padding-left: 8px;
     margin-left: 20px;
 }
-.page-newspaper .quotes blockquote {
+.page-newspaper .separate-quote blockquote {
     margin-top: 14px;
     margin-bottom: 14px;
+    margin-left: var(--padding-left-meta);
     padding-top: 4px;
     padding-bottom: 4px;
     padding-right: 4px;
@@ -422,7 +502,7 @@
     border-right: 1px solid gainsboro;
     border-left-color: var(--newspaper-offquote-color);
 }
-    .page-newspaper blockquote .quote-content {
+    .page-newspaper .quote-content {
         min-height: 30px;
         display: flex;
         flex-direction: column;
@@ -433,218 +513,228 @@
 .page-newspaper blockquote cite{
     font-style: normal;
 }
-.page-newspaper .cite-user {
-    align-items: center;
-}
-.page-newspaper img.mini-ava {
-    max-width: 18px;
-    max-height: 18px;
-    margin: 0 4px;
-}
+
+
+/* #endregion */
+
+/* #region ПОЛЬЗОВАТЕЛЬ */
+
 .page-newspaper .user-cite-content {
     display: flex;
     align-items: center;
 }
-.page-newspaper .user-cite-content.inline{
-    display: inline-block;
-    vertical-align: middle;
+    .page-newspaper .user-cite-content.inline {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+/* #endregion */
+
+/* #region ПОЛЬЗОВАТЕЛЬСКАЯ СВОДКА */
+
+.page-newspaper .user-activity-list{
+    list-style: none;
+    padding-left: var(--padding-left-meta);
 }
-.page-newspaper blockquote .quote-quote {
+
+.page-newspaper .user-activity-list .mini-ava {
     border: 1px solid gainsboro;
-    padding: 8px 4px;
-    background-color: #fbfbeb;
+    width: var(--icon-ava-height);
 }
-.page-newspaper blockquote .quote-quote-author {
+
+/* горизонтальный список юзеров */
+.page-newspaper .user-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+.page-newspaper .user-items .user-cite-content {
+    width: 10em;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    font-size: 0.9em;
+}
+.page-newspaper .user-items .bold{
+    font-weight: normal;
+}
+
+.page-newspaper .user-activity-list h4 {
+    font-weight: 500;
+    font-size: 0.9em;
+    color: rgb(40,40,40);
+    margin-bottom: 2px;
+}
+
+.page-newspaper .news-content .users-activ li .users-description {
+    font-size: 0.9em;
+    margin: 4px 0;
+}
+
+/* обновления отдельных юзеров */
+    .page-newspaper .user-update-item > div {
+        display: flex;
+    }
+    .page-newspaper .user-update-item .user-cite-content {
+        font-size: 0.9em;
+    }
+    .page-newspaper .user-update-item .change-info {
+        font-size: 0.9em;
+        margin-left: 3px;
+    }
+
+
+/* #endregion */
+
+/* #region СТАТИСТИКА */
+
+.page-newspaper .stat-tables-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+}
+
+.page-newspaper .news-content .period-info-section {
+    color: gray;
+    margin: 0;
+    font-size: 0.9em;
+}
+
+
+.page-newspaper .stat-table {
+    flex: 1;
+    margin: 4px 4px;
     border: 1px solid gainsboro;
-    padding: 4px;
-    background-color: #f7f5d3;
-    font-weight: 600;
+    border-collapse: collapse;
+    min-width: 40%;
+    max-width: 50%;
+    font-size: 0.9em;
+}
+
+.page-newspaper .stat-header-th {
+    text-align: left;
+    font-weight: normal;
+    background-color: var(--newspaper-headers-background);
+    border-bottom: 1px solid gainsboro;
+    padding: 2px 4px;
     color: rgb(64,64,64);
 }
 
-/* #endregion конец цитат */
+.page-newspaper .stat-user-td {
+    min-width: 5em;
+    padding: 0 4px;
+}
+
+    .page-newspaper .stat-user-td .user-cite-content {
+        min-height: 2em;
+    }
+
+.page-newspaper .stat-value-td {
+    min-width: 3em;
+    text-align: right;
+    padding: 0 4px;
+    vertical-align: middle;
+}
+
+    .page-newspaper .stat-value-td.positive {
+        color: green;
+    }
+
+    .page-newspaper .stat-value-td.negative {
+        color: red;
+    }
+
+@media (max-device-width:480px) {
+    .page-newspaper .stat-table {
+        min-width: 75%;
+        max-width: 100%;
+    }
+}
+
+/* #endregion */
+
+/* #region ЗАГОЛОВКИ ЦИТАТ, ДИАЛОГОВ */
+
+.page-newspaper .context-block-header {
+    display: flex;
+    align-items: flex-end;
+    padding: var(--padding-content);
+    border-bottom: 1px solid silver;
+    border-top: 1px solid silver;
+    background-color: var(--newspaper-headers-background);
+}
+.page-newspaper .context-block-header img.mini-ava,
+.page-newspaper .dialog-table .dialog-icon{
+    max-height: var(--icon-ava-height);
+    max-width: var(--icon-ava-height);
+    margin: 0;
+    margin-right: 4px;
+}
+/* #endregion */
+
+/* #region МЕТАИНФОРМАЦИЯ ЦИТАТ, ДИАЛОГОВ */
+
+.page-newspaper .metainfo-item {
+    margin: 0px var(--padding-left-meta);
+}
+.page-newspaper .metainfo-date{
+    font-size: 0.8em;
+    color: gray;
+    margin-bottom: 0;
+}
+.page-newspaper .metainfo-text {
+    font-size: 0.8em;
+    color: gray;
+}
+
+/* #endregion */
 
 /* #region ИЗОБРАЖЕНИЯ */
+
 .page-newspaper .news-section figure {
     padding: 4px;
     border-radius: 2px;
     margin: 2px 6px;
     text-align: center;
 }
-.page-newspaper .news-section blockquote figure{
+
+.page-newspaper .news-section blockquote figure {
     text-align: left;
 }
+
 .page-newspaper .dialog-form figure {
     text-align: left;
 }
-.page-newspaper .creations figure{
+
+.page-newspaper .creations figure {
     border: 1px solid rgb(235, 235, 235);
 }
-    .page-newspaper .news-section figure img {
-        margin: 4px 0;
-        max-width: 800px;
-        max-height: 600px;
-        max-width: 100%;
-    }
-    .page-newspaper .news-section figure p,
-    .page-newspaper .news-section figcaption {
-        text-align: center;
-        color: gray;
-        margin-top: 0px;
-    }
-.page-newspaper .news-section img {
-    margin: 4px;
+
+.page-newspaper .news-section figure img {
+    margin: 4px 0;
+    max-width: 800px;
+    max-height: 600px;
+    max-width: 100%;
 }
-.page-newspaper img.rage {
-    width: 40px;
-    vertical-align: middle;
-    margin: 0 2px;
+
+.page-newspaper .news-section figure p,
+.page-newspaper .news-section figcaption {
+    text-align: center;
+    color: gray;
+    margin-top: 0px;
 }
-.page-newspaper .creation-title{
+
+/* творения */
+.page-newspaper .creation-title {
     color: rgb(64,64,64);
 }
-.page-newspaper .creation-descr{
+
+.page-newspaper .creation-descr {
     font-size: 0.8em;
 }
+
 /* #endregion Конец изображений */
 
-/* #region Списки */
-.page-newspaper .news-content ul,
-.page-newspaper .news-content ol{
-    margin: 4px 0 4px 0;
-}
-    .page-newspaper .news-content ul li {
-        padding: 4px 0;
-    }
-        .page-newspaper .news-content ul li p {
-            margin: 0;
-        }
-
-/* #endregion */
-
-/* #region Активность пользователей */
-.page-newspaper .news-content .user-updates-list{
-    margin-top: 10px;
-}
-.page-newspaper .user-activity-list .user-items {
-    display: flex;
-    flex-wrap: wrap;
-}
-        .page-newspaper .user-activity-list .user-item{
-            display: flex;
-            align-items: center;
-            margin: 0 4px;
-            font-size: 0.9em;
-            width: 10em;
-        }
-.page-newspaper .user-activity-list .user-activity-ava {
-    max-width: 16px;
-}
-.page-newspaper .user-activity-list h4{
-    font-weight: 500;
-}
-
-.page-newspaper .famous-users .user-cite-content {
-    align-items: flex-end;
-    margin: 0 2px;
-}
-.page-newspaper .famous-users img.mini-ava {
-    margin-bottom: 2px;
-}
-/* #endregion */
-
-/* #region КОНТЕКСТНЫЙ БЛОК */
-.page-newspaper .context-section {
-    margin-bottom: 12px;
-}
-.page-newspaper .context-block-header {
-    display: flex;
-    align-items: flex-end;
-    padding: 4px 8px;
-    border-bottom: 1px solid silver;
-    border-top: 1px solid silver;
-    background-color: var(--newspaper-headers-background);
-}
-.page-newspaper .context-block {
-}
-.page-newspaper .context-block-header .user-cite-content img{
-    margin-left: 0;
-    margin-right: 4px;
-}
-
-.page-newspaper .context-block.dialogs td.td-author{
-    padding-left: 1.4em;
-}
-/* #endregion */
-
-/* #region СОБЫТИЯ-ЗАМЕТКИ */
-.page-newspaper .note-element {
-    clear: both;
-}
-.page-newspaper .note-item{
-}
-.page-newspaper .note-content{
-    padding-left: 1.5em;
-    padding-top: 0;
-}
-.page-newspaper .note-content > p:first-child{
-    margin-top: 0.2em;
-}
-.page-newspaper img.note-icon{
-    width: 16px;
-    height: 16px;
-    margin: 0;
-    margin-bottom: 2px;
-    margin-right: 4px;
-    align-self: end;
-    opacity: 0.9;
-}
-.page-newspaper .note-title {
-    margin: 0;
-    color: rgb(64,64,64);
-    font-weight: 600;
-}
-.page-newspaper .note-date{
-    font-size: 0.8em;
-    color: gray;
-    margin: 4px 2em;
-    margin-bottom: 0;
-}
-.page-newspaper .note-text {
-    font-size: 0.8em;
-    color: gray;
-}
-/* #endregion */
-
-/* #region ПЕРЕХОДЫ в КОНТЕКСТНОМ БЛОКЕ */
-.page-newspaper .quotes{
-    padding: 1em 0;
-}
-.page-newspaper .creations {
-    padding: 1em 0;
-    padding-bottom: 0;
-}
-/*.page-newspaper .notes-list + .quotes{
-    border-top: 1px solid silver;
-}*/
-.page-newspaper .notes-list + .creations {
-    border-top: 1px solid silver;
-}
-/*.page-newspaper .dialogs + .quotes{
-    border-top: 1px solid silver;
-}*/
-/*.page-newspaper .dialogs + .creations {
-    border-top: 1px solid silver;
-}*/
-.page-newspaper .event-article + .context-section > .quotes:first-child{
-    border-top: 1px solid silver;
-}
-.page-newspaper .event-article + .context-section > .creations:first-child {
-    border-top: 1px solid silver;
-}
-/* #endregion */
-
 /* #region ГАЛЕРЕЯ */
+
 .page-newspaper .gallery{
     display: flex;
     flex-direction: row;
@@ -668,16 +758,17 @@
     .page-newspaper .gallery-item.single {
         max-width: 80%;
     }
-    .page-newspaper .gallery-item.full-row{
+    .page-newspaper .gallery-item.full-row {
         min-width: 80%;
         max-width: 80%;
+        text-align: center;
     }
 
 .page-newspaper figure.gallery-item{
     border: 0;
 }
 .page-newspaper figure.gallery-item img{
-    max-height: 360px;
+    max-height: 500px;
     max-width: 100%;
 }
 
@@ -697,81 +788,53 @@
 }
 /* #endregion */
 
-/* #region Спойлеры */
-.page-newspaper .summary-header {
-    font-family: var(--newspaper-headers-font);
-    font-size: var(--newspaper-headers-font-size);
-    display: inline-block;
-    width: 90%;
-    cursor: pointer;
-    font-size: 0.9em;
-}
-.page-newspaper .summary-header h3{
-    font-size: 1em;
-    margin: 6px 0;
-    font-weight: 500;
-}
-.page-newspaper .content-navigation-header-row{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.page-newspaper .period-info{
-    color: gray;
-}
+/* #region ТАБЛИЦЫ (ДИАЛОГИ) */
 
-    .page-newspaper details summary{
-        cursor: pointer;
-    }
-
-/* #endregion */
-
-/* #region Таблицы */
 .page-newspaper table {
     max-width: 100%;
 }
+
 .page-newspaper .default-table,
 .page-newspaper .dialog-table {
     border-collapse: collapse;
 }
+
 .page-newspaper .dialog-table {
     width: 100%;
 }
+
     .page-newspaper .default-table td,
     .page-newspaper .default-table th,
     .page-newspaper .dialog-table td,
     .page-newspaper .dialog-table th {
         padding: 4px;
     }
-    .page-newspaper .default-table td,
-    .page-newspaper .default-table th {
-        border: 1px solid gainsboro;
-    }
 
+.page-newspaper .default-table td,
+.page-newspaper .default-table th {
+    border: 1px solid gainsboro;
+}
+
+/* #endregion */
+
+/* #region ДИАЛОГИ */
     .page-newspaper .dialog-table th {
+        background-color: var(--newspaper-headers-background);
+        border-top: 1px solid silver;
         border-bottom: 1px solid silver;
-        padding-top: 0.5em;
-        font-weight: 500;
+        padding-left: var(--padding-left-icon);
     }
     .page-newspaper .dialog-table td {
         border-bottom: 1px solid gainsboro;
     }
-    .page-newspaper .context-section .dialog-table th {
-        background-color: var(--newspaper-headers-background);
-        border-top: 1px solid silver;
-        padding-top: 4px;
-        padding-bottom: 4px;
-    }
-        .page-newspaper .dialog-table th > div {
-            display: flex;
-            align-items: flex-end;
-        }
+
+/* верхняя граница для диалога без заголовка в теле события */
 .page-newspaper .dialog-table tr:first-child td {
     border-top: 1px solid gainsboro;
 }
-.page-newspaper .dialog-table tr:last-child td {
-}
 
+.page-newspaper .dialog-header {
+}
 .page-newspaper .dialog-title {
     font-size: 1em;
     font-weight: 600;
@@ -779,6 +842,10 @@
     margin-left: 4px;
     color: rgb(64,64,64);
     display: flex;
+    align-items: center;
+}
+.page-newspaper .dialog-icon{
+    opacity: 0.9;
 }
 .page-newspaper .dialog-date {
     font-size: 0.8em;
@@ -786,51 +853,60 @@
     font-weight: 400;
     margin-left: 1.5em;
 }
-.page-newspaper td.dialog-info-cell{
-    padding-left: 0;
-    padding-bottom: 4px;
-}
-.page-newspaper td.td-author {
-
-}
-.page-newspaper td.td-content{
-}
-.page-newspaper td.td-content p{
-    min-width: 30em;
-}
-.page-newspaper .td-author .user-cite-content{
-}
-.page-newspaper .author-row .td-author {
-    border-bottom: 0px;
-    padding-bottom: 0;
-    width: auto;
-}
-.page-newspaper .content-row .td-content{
-    padding-left: 3em;
-    padding-top: 0;
-}
-.page-newspaper .content-row .quote-quote-author{
-    margin-top: 8px;
-}
 
 .page-newspaper .dialog-table td p {
     margin: 0.5em 0;
     font-size: 0.95em;
 }
 
+.page-newspaper td.td-metainfo {
+    padding: 4px 0;
+    padding-bottom: 6px;
+}
+.page-newspaper td.td-author {
+    padding-left: var(--padding-left-meta);
+    border-bottom: 0px;
+    padding-bottom: 0;
+}
+.page-newspaper td.td-content{
+    padding-left: var(--padding-left-text);
+    padding-top: 0;
+}
+.page-newspaper td.td-note{
+    padding-left: 0;
+}
+
+/* Для заголовка диалога в событии скрываем всё лишнее */
+.page-newspaper .event-article .dialog-table th {
+    background-color: transparent;
+    border: 0;
+}
+.page-newspaper .event-article .td-metainfo .metainfo-item {
+    display: none;
+}
+.page-newspaper .event-article .dialog-table .dialog-icon {
+    display: none;
+}
+
+/* Переопределение с учетом существующего padding'а события */
+.page-newspaper .news-content td.td-author {
+    padding-left: 18px;
+}
+.page-newspaper .news-content td.td-content {
+    padding-left: 40px;
+}
 
 @media (max-device-width:480px) {
-    .page-newspaper td.td-author {
+    .page-newspaper td.td-content p {
+        word-wrap: anywhere;
+        min-width: initial;
     }
-        .page-newspaper td.td-content p {
-            word-wrap: anywhere;
-            min-width: initial;
-        }
 }
 
 /* #endregion */
 
 /* #region ОБЩИЕ СТИЛИ */
+
 .page-newspaper .right {
     float: right;
 }
@@ -911,7 +987,7 @@
     border: 1px solid gainsboro;
     border-radius: 1px;
     padding: 4px;
-    background-color: rgb(240,240,240);
+    font-size: 0.9em;
 }
 .page-newspaper .lined {
     border-bottom: 1px solid silver;
@@ -920,25 +996,71 @@
     margin: 6px 0;
 }
 
+.page-newspaper .work-in-progress {
+    background-color: lightyellow;
+}
+
+.page-newspaper .rumine-news-link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.page-newspaper .dialog-form {
+    margin: 1em 0;
+}
+
+/* Цитирования из Румине */
 .page-newspaper .quote-quote {
-    font-size: 0.9em;
+    font-size: 0.8em;
     border: 1px solid gainsboro;
-    padding: 8px 4px;
+    padding: 4px 2px;
     background-color: #fbfbeb;
 }
 .page-newspaper .quote-quote-author {
-    font-size: 0.9em;
+    font-size: 0.7em;
     border: 1px solid gainsboro;
-    padding: 4px;
+    padding: 4px 2px;
     background-color: #f7f5d3;
     font-weight: 600;
     color: rgb(64,64,64);
 }
-.page-newspaper .dialog-form{
-    margin: 1em 0;
+.page-newspaper .td-content .quote-quote-author {
+    margin-top: 4px;
+}
+.page-newspaper .td-content > div {
+    margin-top: 4px;
+}
+
+.page-newspaper .answer {
+    font-weight: 500;
+    font-size: 0.8em;
+    color: rgb(32, 32, 32);
 }
 
 
+.page-newspaper details summary {
+    cursor: pointer;
+}
+
+/* имитация спойлера Румине */
+.page-newspaper .spoiler summary {
+    color: #0000EE;
+    cursor: pointer;
+}
+    .page-newspaper .spoiler summary:hover {
+        text-decoration: underline;
+    }
+    .page-newspaper .spoiler summary:active {
+        color: red;
+    }
+.page-newspaper .spoiler[open] {
+    padding-left: 4px;
+    border-left: 2px solid gray;
+}
+
+
+/* F-контент */
 .f-content {
     display: none;
 }
@@ -950,103 +1072,81 @@
     }
 }
 
-/* #endregion */
-
-/* #region эксперименты */
-
-/* открепление шапки */
-.page-newspaper .main-header{
-    position: initial;
-}
-.page-newspaper .news-section-header{
-    top: -4px;
-    padding-top: 0.5em;
-}
-.page-newspaper .content-navigation{
-    top: 1em;
-}
-.page-newspaper .nav-links-section{
-    max-height: 88vh;
-}
 
 /* #endregion */
 
-/* #region Навигация в теле газеты */
-.page-newspaper .nav-anchor{
+/* #region НАВИГАЦИЯ ДЛЯ РУМИНЕ */
+
+.page-newspaper .nav-anchor {
     position: relative;
     width: 0;
     height: 0;
 }
 
-.page-newspaper .news-section .news-content ul.nav-inner-list {
-    list-style: none;
-    padding-left: 0;
-    margin-left: 0;
-
-    margin-top: 0px;
-    padding: 6px 0px;
-}
-.page-newspaper ul li.nav-inner-item {
-    display: flex;
-    align-items: center;
-    padding: 0;
-}
-    .page-newspaper .nav-inner-item.level-2 {
-        font-size: 1.1em;
-    }
-    .page-newspaper .nav-inner-item.level-3 {
-        margin-left: 1.2em;
-    }
-    .page-newspaper .nav-inner-list .level-2 + .level-3 {
-        border-top: 1px solid gainsboro;
-    }
-    .page-newspaper .event-nav-icon{
-        width: 20px;
-        height: 20px;
-    }
-    .page-newspaper .event-nav-date{
-        display: none;
-        color: gray;
-        margin-left: 1em;
-    }
-.page-newspaper .nav-inner-link {
-}
-.page-newspaper .nav-inner-list .nav-section a.nav-inner-link {
-    font-weight: 500;
-    color: darkblue;
-}
-.page-newspaper .nav-inner-list .nav-event a.nav-inner-link {
-    font-weight: normal;
-}
-.page-newspaper .nav-inner-list .nav-event.important .event-nav-icon {
-    border: 1px solid gainsboro;
-}
-
-.page-newspaper .section-navigation .nav-inner-list{
-    display: inline-block;
-    border-top: 1px solid silver;
-    border-bottom: 1px solid silver;
-    padding: 8px;
-}
 .page-newspaper .header-navigation {
     flex: 1;
     text-align: right;
     align-self: flex-end;
 }
-.page-newspaper .header-nav-item{
+
+.page-newspaper .header-nav-item {
     font-size: 0.8em;
     color: rgb(64,64,64);
     margin: 0 4px;
 }
 
+.page-newspaper .editions-nav-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid silver;
+    border-top: 0;
+}
+
+    .page-newspaper .editions-nav-table th {
+        border-bottom: 1px solid silver;
+        padding: 4px;
+        text-align: left;
+    }
+
+    .page-newspaper .editions-nav-table td {
+        padding: 4px;
+    }
+
+    .page-newspaper .editions-nav-table .edition-cell {
+    }
+
+    .page-newspaper .editions-nav-table .next {
+        text-align: right;
+    }
+
+.page-newspaper caption {
+    background-color: var(--newspaper-headers-background);
+    border: 1px solid silver;
+}
+
+.page-newspaper .editions-caption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin: 8px 0;
+}
+
+    .page-newspaper .editions-caption img {
+        height: 20px;
+        margin: 4px;
+    }
+
 /* #endregion */
 
-/* #region Адаптации под новость на Румайне */
+/* #region АДАПТАЦИИ ПОД РУМИНЕ */
+
 .page-newspaper.RumineFullNews {
     --newspaper-content-line-height: 24px;
     --newspaper-content-font-size: 16px;
     --newspaper-headers-font-size: 18px;
-    --newspaper-headers-background: rgb(250,250,250);
+    --newspaper-headers-background: rgb(240,240,240);
 }
 .page-newspaper.RumineFullNews .news-section-header h2 {
     font-weight: 600;
@@ -1080,10 +1180,6 @@
 
     .page-newspaper.RumineFullNews .event-header img.event-icon {
         width: 30px;
-    }
-    .page-newspaper.RumineFullNews img.note-icon {
-        width: 18px;
-        height: 18px;
     }
 
     .page-newspaper.RumineFullNews img.header-gif {
