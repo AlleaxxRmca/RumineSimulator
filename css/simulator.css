@@ -2,6 +2,9 @@
     --highlited-color: #fff5e1;
     --expanded-color: #e1ffea;
     --header-color: rgb(245,245,255);
+
+    --max-text-content-width: 55em;
+    --max-content-width: 1200px;
 }
 
 
@@ -61,6 +64,11 @@ button {
 .no-headers .rumine-header.optionable{
     display: none;
 }
+
+
+/* #region Общие стили */
+
+/* Заголовки */
 .rumine-header {
     display: flex;
     align-items: center;
@@ -73,6 +81,11 @@ button {
 .rumine-header-icon{
     
 }
+.rumine-header-h2 {
+    flex: 1;
+    margin: 2px;
+    font-size: 1.5em;
+}
 .rumine-header-h3 {
     flex: 1;
     margin: 2px;
@@ -83,14 +96,197 @@ button {
     margin: 0 2px;
     font-size: 1.1em;
 }
+.rumine-header-h5 {
+    flex: 1;
+    margin: 0 2px;
+    font-size: 1.1em;
+}
 
-.event-action .object-link{
-    display: inline-block;
-    padding: 2px;
+/* Контент страницы */
+.rumine-text-content {
+    max-width: var(--max-text-content-width);
+    min-height: 60vw;
+    border-right: 1px solid silver;
+    padding: 8px;
+
+    /* эксперимент с контентом посередине */
+    /*margin: auto;
+    border-left: 1px solid silver;
+    background-color: white;*/
+}
+.rumine-content {
+    max-width: var(--max-content-width);
+    min-height: 60vw;
+    border-right: 1px solid silver;
+    padding: 8px;
+}
+.rumine-content-extended {
+    padding: 8px;
+    min-height: 60vw;
+}
+
+
+.rumine-section{
+    font-size: 1em;
+    line-height: 1.45rem;
+}
+
+/* Абзацы и заголовки */
+    .rumine-section h3 {
+        margin: 12px 0 4px 0;
+        font-size: 1.25em;
+    }
+.rumine-section h4{
+    margin: 10px 0 4px 0;
+    font-size: 1.1em;
+}
+.rumine-section h5{
+
+}
+.rumine-section p {
+    margin: 0.75em 0;
+}
+
+/* Ссылки */
+.rumine-section a{
+    color: royalblue;
+    text-decoration: none;
+}
+.rumine-section a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+.rumine-section a:active{
+    color: darkblue;
+}
+.rumine-section a:visited{
+    color: purple;
+}
+/* Списки */
+    .rumine-section ul,
+    .rumine-section ol {
+        margin: 4px 0;
+    }
+.rumine-section li{
+
+}
+.rumine-section li p{
+    margin: 6px 0;
+}
+.rumine-section li h4{
+
+} 
+.rumine-section li h5{
+    margin: 12px 0 4px 0;
+    font-size: 1em;
+    font-weight: 500;
+}
+/* Таблицы */
+.rumine-table{
+    border-collapse: collapse;
+}
+.rumine-table th{
+    padding: 2px 4px;
+    border: 1px solid gainsboro;
+}
+.rumine-table td{
+    padding: 2px 4px;
+    border: 1px solid gainsboro;
+}
+
+/* Изображения */
+.rumine-figure {
+    max-width: 96%;
+    margin: 6px 4px;
+    padding: 16px;
+    padding-bottom: 8px;
+    background-color: white;
+    text-align: center;
+    border: 1px solid transparent;
+}
+.rumine-figure:hover {
+    border: 1px solid gainsboro;
+}
+    .rumine-figure figcaption {
+        font-size: 0.9em;
+        margin: 8px 0;
+        color: gray;
+    }
+
+.rumine-image {
+    max-width: 600px;
+    max-height: 500px;
+    margin: 4px;
+    padding: 4px;
+}
+
+/* Блочный заголовок */
+.rumine-section-header {
+    display: flex;
+    align-items: center;
+    margin: 4px 0;
+    padding: 6px 4px;
+    border: 1px solid silver;
+    background-color: whitesmoke;
+}
+.rumine-section-icon {
+    width: 24px;
+    margin-right: 4px;
+}
+    h2.rumine-section-header {
+        font-size: 1.5em;
+    }
+    h3.rumine-section-header {
+        font-size: 1.3em;
+    }
+    h4.rumine-section-header {
+        font-size: 1.1em;
+    }
+    h5.rumine-section-header {
+        font-size: 1em;
+    }
+
+
+@media (max-device-width:480px) {
+    .rumine-image {
+        max-width: 100%;
+    }
+    .rumine-text-content{
+        border-left: 0;
+        margin-left: 0;
+    }
+}
+
+/* #endregion */
+
+
+
+.rumine-scenario-warning{
+
 }
 
 img.rage {
     width: 40px;
     vertical-align: middle;
     margin: 0 2px;
+}
+.events-list-full ul .list-group-header {
+    font-size: 1.5em;
+    letter-spacing: 3.5px;
+    color: rgb(64, 64, 64);
+    font-family: Consolas, Courier New, Courier, monospace;
+    padding: 2px 4px;
+    margin: 6px 0;
+    font-weight: 600;
+    border: 1px solid gainsboro;
+}
+
+.reduced-news-warning {
+    font-size: 0.9em;
+    display: inline-block;
+    border: 1px solid darkblue;
+    padding: 4px;
+    margin: 4px;
+    background-color: lightyellow;
+    color: darkblue;
 }

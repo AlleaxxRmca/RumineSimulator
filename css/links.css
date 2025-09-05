@@ -1,5 +1,6 @@
 ﻿
-.nav-misc .nav-link {
+.nav-misc .nav-link,
+.nav-scenarios .nav-link{
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -8,13 +9,15 @@
     margin: 2px;
     border: 1px solid gainsboro;
 }
-    .nav-misc .nav-link:hover {
+    .nav-misc .nav-link:hover,
+    .nav-scenarios .nav-link:hover {
         color: blue;
     }
-    .nav-misc .nav-link.active {
+    .nav-misc .nav-link.active,
+    .nav-scenarios .nav-link.active {
         font-weight: 500;
-        color: orangered;
-        background: whitesmoke;
+        color: rgb(32, 32, 32);
+        background-color: rgb(235, 235, 235);
         border: 1px solid silver;
     }
 
@@ -52,4 +55,62 @@
     border-color: green;
     border: 0;
     border-bottom: 1px solid silver;
+}
+
+
+
+.tab-menu .tab-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    min-width: 10em;
+    color: black;
+    text-decoration: none;
+    margin: 0;
+    padding: 6px 4px;
+    border-top: 1px solid silver;
+    border-right: 1px solid silver;
+    border-bottom: 1px solid silver;
+}
+    .tab-menu .tab-item:visited {
+        text-decoration: none;
+    }
+    .tab-menu .tab-item.pinned {
+        font-size: 1.2em;
+        border: 0;
+        border-right: 1px solid silver;
+        min-width: 10em;
+    }
+
+    .tab-menu .tab-item.not-pinned {
+        border-color: whitesmoke;
+        border-color: silver;
+    }
+
+    .tab-menu .tab-item:hover {
+        background: gainsboro;
+        border-color: silver;
+    }
+
+    .tab-menu .tab-item.active {
+        background: rgb(235,235,235);
+        border-color: silver;
+    }
+
+    .tab-menu .tab-item.pinned.active {
+        border-color: silver;
+        background-color: rgb(220,220,220);
+        font-weight: 600;
+    }
+
+@media (max-device-width:480px) {
+
+    .tab-menu .tab-item.pinned {
+        min-width: auto;
+    }
+    .tab-menu .tab-item.not-pinned{
+        width: 90%;
+    }
 }
