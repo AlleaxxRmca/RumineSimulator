@@ -1733,7 +1733,7 @@
     {
       "ID": 67,
       "Name": "Появление юзеров",
-      "Description": "События с вернувшимися юзерами или новичками сайта",
+      "Description": "События про уход и возвращение юзеров, а также новичков сайта",
       "ImagePath": "user-plus",
       "Color": "black",
       "SecondaryColor": "transparent",
@@ -2052,7 +2052,7 @@
       "SecondaryColor": "lightpink",
       "Importance": 2,
       "Category": "Тематика",
-      "IsTechnical": false,
+      "IsTechnical": true,
       "TagAssigns": [
         0
       ],
@@ -2190,7 +2190,8 @@
         6,
         34,
         37,
-        65
+        65,
+        92
       ],
       "UserLinks": [
         {
@@ -2410,7 +2411,8 @@
         9,
         17,
         37,
-        65
+        65,
+        92
       ],
       "UserLinks": [
         {
@@ -2513,7 +2515,8 @@
       "Tags": [
         28,
         34,
-        44
+        44,
+        92
       ],
       "UserLinks": [
         {
@@ -2989,7 +2992,8 @@
       "HTMLWip": null,
       "Tags": [
         28,
-        48
+        48,
+        67
       ],
       "UserLinks": [
         {
@@ -6174,7 +6178,8 @@
       "HTMLWip": null,
       "Tags": [
         37,
-        44
+        44,
+        67
       ],
       "UserLinks": [
         {
@@ -6577,7 +6582,8 @@
       "HTMLWip": null,
       "Tags": [
         28,
-        44
+        44,
+        67
       ],
       "UserLinks": [
         {
@@ -6645,7 +6651,8 @@
       "HTML": "\u003Cp\u003E\r\n\tНа этот раз \u00ABуходит\u00BB \u003Cb\u003ELeggera\u003C/b\u003E, говорит, что его игнорят,\r\n\tновости лежат в модерации, ЛЕТСПЛЕЙ не продолжается, потому что 13 серия лежит в модерации, \r\n\tи как спрашивается дальше \r\n\tснимать \u003Cimg class=\u0022rage\u0022 src=\u0022https://alleaxx.github.io/Румайности/images/Рейджи/3a_4to.png\u0022\u003E\u003C/img\u003E,\r\n\tесли новости не идут на главную, и получается весь труд идёт насмарку...\r\n\u003C/p\u003E\r\n\u003Cp\u003E\r\n\tКто-то скажет (и сказал), что это очередной пиар-ход, типа давайте уговорим юзера остаться и расскажем \r\n\tкакой же он на самом деле классный хороший, дабы он погрелся в лучах славы.\r\n\tЭто мнение определенно имеет право на жизнь. \r\n\u003C/p\u003E\r\n\u003Cp\u003E\r\n \tОднако! тут налицо серьёзная проблема, админы действительно не успевают справиться с потоком новостей \r\n\tв модерации сайта, что и написали \u003Ca href=\u0022https://ru-minecraft.ru/forum/showtopic-1156/#message-15706\u0022 target=\u0022_blank\u0022\u003E\r\n    \u003Cspan\u003Eюзеры в теме\u003C/span\u003E\u003C/a\u003E\r\n вместе с самим \u003Cb\u003EMadMoss\u003C/b\u003E\u0027ом.\r\n\tВозможно, нужно как-то совершенствовать систему публикации новостей пользователями, но до тех пор:\r\n\u003C/p\u003E\r\n\u003Cblockquote\u003E\r\n \u003Cp\u003E\r\n     Вашу новость долго модерируют или же вовсе не промодерировали? Есть вопросы по оформлению?\r\n \u003C/p\u003E\r\n \u003Cp\u003E\r\n \tЗадавайте их здесь.\r\n\u003C/p\u003E\r\n\r\n \u003Ccite\u003E{{usercite|MadMoss|https://ru-minecraft.ru/forum/showtopic-1160/#message-15748}}\u003C/cite\u003E\r\n\u003C/blockquote\u003E\r\n\u003Cp\u003E\r\n\t\u00ABЗдесь\u00BB в смысле в \u003Ca href=\u0022https://ru-minecraft.ru/forum/showtopic-1160/#message-15748\u0022 target=\u0022_blank\u0022\u003E\r\n    \u003Cspan\u003Eновой теме\u003C/span\u003E\u003C/a\u003E, созданной Мэдом. Вот и задавайте там вопросы, а темы про уходы пусть останутся в стороне.\r\n\u003C/p\u003E\r\n\r\n",
       "HTMLWip": null,
       "Tags": [
-        44
+        44,
+        67
       ],
       "UserLinks": [
         {
@@ -25847,7 +25854,10 @@
       },
       "ContentHTML": "\u003Cp\u003E\n\tУчти я игрок с большим стажем, и не допускаю ошибок многих нубов \u003Cimg class=\u0022rage\u0022 src=\u0022https://alleaxx.github.io/Румайности/images/Рейджи/ruka-lico.png\u0022\u003E\u003C/img\u003E\r\n\n\u003C/p\u003E",
       "Appearance": "2013-01-26T00:00:00",
-      "SourceLink": null,
+      "SourceLink": {
+        "Name": null,
+        "Link": "https://ru-minecraft.ru/forum/showtopic-3193/findpost-87275/"
+      },
       "Note": null,
       "LikesRating": 4,
       "Tags": [
@@ -26063,7 +26073,10 @@
       },
       "ContentHTML": "\u003Cp\u003E\n\tЗакажи ЛАЛКУ\n\u003C/p\u003E\r\n",
       "Appearance": "2013-03-10T00:00:00",
-      "SourceLink": null,
+      "SourceLink": {
+        "Name": null,
+        "Link": "https://ru-minecraft.ru/user/NIGHTDANGER/"
+      },
       "Note": null,
       "LikesRating": 2,
       "Tags": [
@@ -27280,7 +27293,10 @@
       },
       "ContentHTML": "\u003Cp\u003E\n\tХеробрин Он существует Доказано мною и моими друзьями первый на серве не играет он ваще тупень в майне кароче он видел Страный храм Из алм блоки и он там проволился в пездну\n\u003C/p\u003E",
       "Appearance": "2013-01-12T00:00:00",
-      "SourceLink": null,
+      "SourceLink": {
+        "Name": null,
+        "Link": "https://web.archive.org/web/20130601000000*/http://ru-minecraft.ru/forum/showtopic-3409/page-1/"
+      },
       "Note": null,
       "LikesRating": null,
       "Tags": [
@@ -27509,7 +27525,10 @@
       },
       "ContentHTML": "\u003Cp\u003E\n\tДо чего люди дошли , что по компьютеру друзей ищут ! А на улицу с настоящими друзьями слабо погулять ?\n\u003C/p\u003E",
       "Appearance": "2013-03-01T00:00:00",
-      "SourceLink": null,
+      "SourceLink": {
+        "Name": null,
+        "Link": "https://web.archive.org/web/http://ru-minecraft.ru/forum/showtopic-4200"
+      },
       "Note": null,
       "LikesRating": null,
       "Tags": [
@@ -27584,7 +27603,10 @@
       },
       "ContentHTML": "\u003Cp\u003E\n\tМне кажется или тема начинает превращаться во флудилку \u003Cimg class=\u0022rage\u0022 src=\u0022https://alleaxx.github.io/Румайности/images/Рейджи/mil2.png\u0022\u003E\u003C/img\u003E\n\u003C/p\u003E",
       "Appearance": "2013-03-12T00:00:00",
-      "SourceLink": null,
+      "SourceLink": {
+        "Name": null,
+        "Link": "https://ru-minecraft.ru/forum/showtopic-4386/findpost-158210/"
+      },
       "Note": null,
       "LikesRating": null,
       "Tags": [
@@ -27717,7 +27739,10 @@
       },
       "ContentHTML": "\u003Cp\u003E\n\tНе читай подпись.\u003Cbr/\u003E\n\tТы проиграл.\n\u003C/p\u003E",
       "Appearance": "2013-06-17T00:00:00",
-      "SourceLink": null,
+      "SourceLink": {
+        "Name": null,
+        "Link": "https://ru-minecraft.ru/user/tonchik"
+      },
       "Note": null,
       "LikesRating": null,
       "Tags": [
@@ -28705,7 +28730,10 @@
       },
       "ContentHTML": "\u003Cp\u003E\n\tТолько актуальные новости без флуда и расписывания на многие абзацы никому неинтересных подробностей\n\tстычек форумных дедов об том, как Кирила Кнанепович (царствие ему небесное да упокой господь его душу)\n\tпоссорился с Бедламом Дхудавидычом.\n\u003C/p\u003E",
       "Appearance": "2021-01-01T00:00:00",
-      "SourceLink": null,
+      "SourceLink": {
+        "Name": null,
+        "Link": "https://alleaxx.github.io/%D0%A0%D1%83%D0%BC%D0%B0%D0%B9%D0%BD%D0%BE%D1%81%D1%82%D0%B8/2021/2021.html"
+      },
       "Note": null,
       "LikesRating": null,
       "Tags": [
@@ -29527,13 +29555,16 @@
     {
       "ID": 197,
       "Author": {
-        "UserID": 117859,
-        "UserNick": "3JIou_Kpunep",
+        "UserID": 197295,
+        "UserNick": "Ghost_Kpunep",
         "Note": null
       },
       "ContentHTML": "\u003Cp\u003E\n\tЯ всё ещё жив. \u003Cimg class=\u0022rage\u0022 src=\u0022https://alleaxx.github.io/Румайности/images/Рейджи/nudaeIII.png\u0022 alt=\u0022nudaeIII.png\u0022/\u003E\r\n Это недоразумение следовало бы исправить.\n\u003C/p\u003E",
       "Appearance": "2020-07-25T00:00:00",
-      "SourceLink": null,
+      "SourceLink": {
+        "Name": null,
+        "Link": "https://ru-minecraft.ru/forum/showtopic-15361/findpost-1435544/"
+      },
       "Note": null,
       "LikesRating": null,
       "Tags": [
@@ -32333,7 +32364,10 @@
       },
       "ContentHTML": "\u003Cp\u003E\n\tНайдите гения \u003Cimg class=\u0022rage\u0022 src=\u0022https://alleaxx.github.io/Румайности/images/Рейджи/ololosha.png\u0022 alt=\u0022ololosha\u0022/\u003E\r\n\t\u003Cbr/\u003E\r\n\t\u003Cimg class=\u0022rage\u0022 src=\u0022https://alleaxx.github.io/Румайности/images/Рейджи/poker-face.png\u0022 alt=\u0022poker-face\u0022/\u003E\r\n\t\u003Cimg class=\u0022rage\u0022 src=\u0022https://alleaxx.github.io/Румайности/images/Рейджи/poker-face.png\u0022 alt=\u0022poker-face\u0022/\u003E\n\t\u003Cimg class=\u0022rage\u0022 src=\u0022https://alleaxx.github.io/Румайности/images/Рейджи/poker-face.png\u0022 alt=\u0022poker-face\u0022/\u003E\n\t\u003Cimg class=\u0022rage\u0022 src=\u0022https://alleaxx.github.io/Румайности/images/Рейджи/poker-face.png\u0022 alt=\u0022poker-face\u0022/\u003E\n\t\u003Cimg class=\u0022rage\u0022 src=\u0022https://alleaxx.github.io/Румайности/images/Рейджи/poker-face.png\u0022 alt=\u0022poker-face\u0022/\u003E\n\t\u003Cimg class=\u0022rage\u0022 src=\u0022https://alleaxx.github.io/Румайности/images/Рейджи/poker-face.png\u0022 alt=\u0022poker-face\u0022/\u003E\u003Cbr/\u003E\n\t\u003Cimg class=\u0022rage\u0022 src=\u0022https://alleaxx.github.io/Румайности/images/Рейджи/poker-face.png\u0022 alt=\u0022poker-face\u0022/\u003E\n\t\u003Cimg class=\u0022rage\u0022 src=\u0022https://alleaxx.github.io/Румайности/images/Рейджи/poker-face.png\u0022 alt=\u0022poker-face\u0022/\u003E\n\t\u003Cimg class=\u0022rage\u0022 src=\u0022https://alleaxx.github.io/Румайности/images/Рейджи/poker-face.png\u0022 alt=\u0022poker-face\u0022/\u003E\n\t\u003Cimg class=\u0022rage\u0022 src=\u0022https://alleaxx.github.io/Румайности/images/Рейджи/poker-face.png\u0022 alt=\u0022poker-face\u0022/\u003E\n\t\u003Cimg class=\u0022rage\u0022 src=\u0022https://alleaxx.github.io/Румайности/images/Рейджи/poker-face.png\u0022 alt=\u0022poker-face\u0022/\u003E\n\t\u003Cimg class=\u0022rage\u0022 src=\u0022https://alleaxx.github.io/Румайности/images/Рейджи/poker-face.png\u0022 alt=\u0022poker-face\u0022/\u003E\u003Cbr/\u003E\n\t\u003Cimg class=\u0022rage\u0022 src=\u0022https://alleaxx.github.io/Румайности/images/Рейджи/poker-face.png\u0022 alt=\u0022poker-face\u0022/\u003E\n\t\u003Cimg class=\u0022rage\u0022 src=\u0022https://alleaxx.github.io/Румайности/images/Рейджи/poker-face.png\u0022 alt=\u0022poker-face\u0022/\u003E\n\t\u003Cimg class=\u0022rage\u0022 src=\u0022https://alleaxx.github.io/Румайности/images/Рейджи/poker-face.png\u0022 alt=\u0022poker-face\u0022/\u003E\n\t\u003Cimg class=\u0022rage\u0022 src=\u0022https://alleaxx.github.io/Румайности/images/Рейджи/poker-face.png\u0022 alt=\u0022poker-face\u0022/\u003E\n\t\u003Cimg class=\u0022rage\u0022 src=\u0022https://alleaxx.github.io/Румайности/images/Рейджи/poker-face.png\u0022 alt=\u0022poker-face\u0022/\u003E\n\t\u003Cimg class=\u0022rage\u0022 src=\u0022https://alleaxx.github.io/Румайности/images/Рейджи/poker-face.png\u0022 alt=\u0022poker-face\u0022/\u003E\u003Cbr/\u003E\n\t\u003Cimg class=\u0022rage\u0022 src=\u0022https://alleaxx.github.io/Румайности/images/Рейджи/poker-face.png\u0022 alt=\u0022poker-face\u0022/\u003E\n\t\u003Cimg class=\u0022rage\u0022 src=\u0022https://alleaxx.github.io/Румайности/images/Рейджи/poker-face.png\u0022 alt=\u0022poker-face\u0022/\u003E\n\t\u003Cimg class=\u0022rage\u0022 src=\u0022https://alleaxx.github.io/Румайности/images/Рейджи/poker-face.png\u0022 alt=\u0022poker-face\u0022/\u003E\n\t\u003Cimg class=\u0022rage\u0022 src=\u0022https://alleaxx.github.io/Румайности/images/Рейджи/genius.png\u0022 alt=\u0022genius\u0022/\u003E\n\t\u003Cimg class=\u0022rage\u0022 src=\u0022https://alleaxx.github.io/Румайности/images/Рейджи/poker-face.png\u0022 alt=\u0022poker-face\u0022/\u003E\n\t\u003Cimg class=\u0022rage\u0022 src=\u0022https://alleaxx.github.io/Румайности/images/Рейджи/poker-face.png\u0022 alt=\u0022poker-face\u0022/\u003E\u003Cbr/\u003E\n\t\u003Cimg class=\u0022rage\u0022 src=\u0022https://alleaxx.github.io/Румайности/images/Рейджи/poker-face.png\u0022 alt=\u0022poker-face\u0022/\u003E\n\t\u003Cimg class=\u0022rage\u0022 src=\u0022https://alleaxx.github.io/Румайности/images/Рейджи/poker-face.png\u0022 alt=\u0022poker-face\u0022/\u003E\n\t\u003Cimg class=\u0022rage\u0022 src=\u0022https://alleaxx.github.io/Румайности/images/Рейджи/poker-face.png\u0022 alt=\u0022poker-face\u0022/\u003E\n\t\u003Cimg class=\u0022rage\u0022 src=\u0022https://alleaxx.github.io/Румайности/images/Рейджи/poker-face.png\u0022 alt=\u0022poker-face\u0022/\u003E\n\t\u003Cimg class=\u0022rage\u0022 src=\u0022https://alleaxx.github.io/Румайности/images/Рейджи/poker-face.png\u0022 alt=\u0022poker-face\u0022/\u003E\n\t\u003Cimg class=\u0022rage\u0022 src=\u0022https://alleaxx.github.io/Румайности/images/Рейджи/poker-face.png\u0022 alt=\u0022poker-face\u0022/\u003E\u003Cbr/\u003E\n\n\u003C/p\u003E",
       "Appearance": "2013-06-27T00:00:00",
-      "SourceLink": null,
+      "SourceLink": {
+        "Name": null,
+        "Link": "https://ru-minecraft.ru/forum/showtopic-6292/findpost-393582/"
+      },
       "Note": null,
       "LikesRating": null,
       "Tags": [
@@ -34474,7 +34508,10 @@
       },
       "ContentHTML": "\u003Cp\u003E\n\tВот так вы всех и выпинываете новичков, а потом думаете, что это румине умер.\n\u003C/p\u003E\n\u003Cp\u003E\n\n\tВот неху делать, пришел чувачек во флудилочку первый раз, понапостил гавнеца,\n\tпоразмыслил про олдфагов, в общем-то правильно, амбиции кое-какие имеет, тоже правильно,\n\tно нет, обязательно надо вставить свою олдфажную поносню\n\t\u0022ВСЕ ТЫ ЗАШКВОРИН УАХАХА ТЫ НИКАДА НИЧЕМ НИ СТАНИШЬ ТЫ ДНО ЧО НЕ ПОНИМАЕШЬ ФОРУМНЫЙ ЧАТ НЕ РАВНО ФЛУДИЛКА\n\tФУУУ ИДИ САСИ ЗУЙЦа \u003Cimg class=\u0022rage\u0022 src=\u0022https://alleaxx.github.io/Румайности/images/Рейджи/megafffuuu.png\u0022 alt=\u0022megafffuuu\u0022/\u003E\r\n \u003Cimg class=\u0022rage\u0022 src=\u0022https://alleaxx.github.io/Румайности/images/Рейджи/misc-all.png\u0022 alt=\u0022misc-all\u0022/\u003E\r\n ЧЕ СУКА ТЫ ЖЕ 10 ЛЕТ НА ПОДОБНЫХ САЙТАХ СИДЕЛ ТЫ ДОЛЖЕН ЗНАТЬ ШТО\n\tЗДЕСЬ ОДИН РАЗ ОБЛАЖАЕШЬСЯ И КУЧА АЛТФАКОВ ТЕБЕ СРУТ НА ЛИЦО1111\n\tИ ФОРУМНЫЙ ЧАТ != ФЛУДИЛКА(кстати, не обращай внимания, что у нас прошлые чаты попеременно назывались то чатом,\n\tто флудилкой, ведь тогда это никого не ипало, но сейчас, для того чтобы на тебя насрать,\n\tэто еще какое значение имеет \u003Cimg class=\u0022rage\u0022 src=\u0022https://alleaxx.github.io/Румайности/images/Рейджи/default3.png\u0022 alt=\u0022default3\u0022/\u003E\r\n )\u0022. Мерзкая олдфажня. Фу, противно.\n\u003C/p\u003E",
       "Appearance": "2016-01-05T00:00:00",
-      "SourceLink": null,
+      "SourceLink": {
+        "Name": null,
+        "Link": "https://ru-minecraft.ru/forum/showtopic-13408/findpost-1170825/"
+      },
       "Note": "Аллеха порвало!",
       "LikesRating": null,
       "Tags": [
@@ -42458,7 +42495,7 @@
           "Appearance": "2013-06-03T00:00:00",
           "SourceLink": {
             "Name": null,
-            "Link": null
+            "Link": "https://ru-minecraft.ru/forum/showtopic-5886"
           },
           "Note": null,
           "LikesRating": null,
@@ -43635,7 +43672,7 @@
           "Appearance": "2024-04-10T00:00:00",
           "SourceLink": {
             "Name": null,
-            "Link": null
+            "Link": "https://ru-minecraft.ru/forum/showtopic-15361/findpost-1521985/"
           },
           "Note": null,
           "LikesRating": null,
@@ -48577,7 +48614,10 @@
           },
           "ContentHTML": "\u003Cdiv\u003E\r\n\t\u003Cdiv class=\u0022quote-quote\u0022\u003E\r\n\t\tAllexx \u003Cbr/\u003E\r\n\t\tЗвание: Шерминатор\u003Cbr/\u003E\r\n\t\t\u003Cb\u003EЖурналисты\u003C/b\u003E\u003Cbr/\u003E\r\n\t\tСообщений: 12304\u003Cbr/\u003E\r\n\t\tСимпатий: 9199\u003Cbr/\u003E\r\n\t\tТрофеев: 14\u003Cbr/\u003E\r\n\t\u003C/div\u003E\r\n\u003C/div\u003E\n\u003Cp\u003E\n\t[19:45:33] IlyaSidorin: Я в ах*е\n\u003C/p\u003E",
           "Appearance": "2013-04-19T00:00:00",
-          "SourceLink": null,
+          "SourceLink": {
+            "Name": null,
+            "Link": "https://ru-minecraft.ru/forum/showtopic-5108/findpost-242897/"
+          },
           "Note": null,
           "LikesRating": null,
           "Tags": []
@@ -48774,7 +48814,10 @@
           },
           "ContentHTML": "\u003Cp\u003E\n\tПойти, Журналистов чтоли попросить? \u003Cimg class=\u0022rage\u0022 src=\u0022https://alleaxx.github.io/Румайности/images/Рейджи/jesus.png\u0022 alt=\u0022jesus\u0022/\u003E\r\n\n\u003C/p\u003E",
           "Appearance": "2013-04-30T00:00:00",
-          "SourceLink": null,
+          "SourceLink": {
+            "Name": null,
+            "Link": "https://ru-minecraft.ru/forum/showtopic-5334/findpost-275231/"
+          },
           "Note": null,
           "LikesRating": null,
           "Tags": []
@@ -50155,7 +50198,10 @@
           },
           "ContentHTML": "\u003Cp\u003E\n\tРаньше времена были другие-были Вижн,Найт,Кола... \u003Cimg class=\u0022rage\u0022 src=\u0022https://alleaxx.github.io/Румайности/images/Рейджи/okey.png\u0022 alt=\u0022okey\u0022/\u003E\n\t\u003Cbr/\u003E\n\tА сейчас-так...\n\u003C/p\u003E",
           "Appearance": "2013-05-12T00:00:00",
-          "SourceLink": null,
+          "SourceLink": {
+            "Name": null,
+            "Link": "https://ru-minecraft.ru/forum/showtopic-5334/findpost-297592/"
+          },
           "Note": null,
           "LikesRating": null,
           "Tags": []
@@ -56575,7 +56621,7 @@
       ]
     },
     {
-      "OrderIndex": 15,
+      "OrderIndex": 140,
       "TitlePeriod": "Начало 2014",
       "TitleSeries": "Ретро-Румайности",
       "TitleEdition": "Форумный ренессанс",
@@ -56638,7 +56684,7 @@
       ]
     },
     {
-      "OrderIndex": 50,
+      "OrderIndex": 141,
       "TitlePeriod": "Весна 2014",
       "TitleSeries": "Ретро-Румайности",
       "TitleEdition": "Новое время",
@@ -56701,7 +56747,7 @@
       ]
     },
     {
-      "OrderIndex": 16,
+      "OrderIndex": 160,
       "TitlePeriod": "Начало 2016",
       "TitleSeries": "Ретро-Румайности",
       "TitleEdition": "Проблеск активности",
@@ -56774,7 +56820,7 @@
       ]
     },
     {
-      "OrderIndex": 17,
+      "OrderIndex": 161,
       "TitlePeriod": "Весна 2016",
       "TitleSeries": "Краткие Румайности",
       "TitleEdition": "Пока живем",
@@ -56831,6 +56877,184 @@
           "Hidden": false,
           "DateFrom": "2016-05-01T00:00:00",
           "DateTo": "2016-05-31T23:59:59",
+          "HTMLEntrance": null,
+          "Sections": []
+        }
+      ]
+    },
+    {
+      "OrderIndex": 162,
+      "TitlePeriod": "Лето 2016",
+      "TitleSeries": "Ретро-Румайности",
+      "TitleEdition": "Слава Руминскому Союзу!",
+      "LogoImageName": "GerbLegacy",
+      "DateFrom": "2016-06-01T00:00:00",
+      "DateTo": "2016-07-31T23:59:59",
+      "ReleaseDate": "0001-01-01T00:00:00",
+      "RumineLink": null,
+      "RumineNewsID": null,
+      "IsClassified": false,
+      "EntranceSection": {
+        "Title": "ВСТУПЛЕНИЕ",
+        "Description": null,
+        "Order": 0,
+        "Type": 0,
+        "Hidden": false,
+        "DateFrom": "2016-06-01T00:00:00",
+        "DateTo": "2016-07-31T23:59:59",
+        "HTMLEntrance": null,
+        "Sections": []
+      },
+      "EndingSection": {
+        "Title": "ЗАВЕРШЕНИЕ",
+        "Description": null,
+        "Order": 100,
+        "Type": 0,
+        "Hidden": false,
+        "DateFrom": "2016-06-01T00:00:00",
+        "DateTo": "2016-07-31T23:59:59",
+        "HTMLEntrance": null,
+        "Sections": []
+      },
+      "Tags": [
+        87,
+        88
+      ],
+      "NewsSections": [
+        {
+          "Title": "Июнь 2016",
+          "Description": "...",
+          "Order": 1,
+          "Type": 1,
+          "Hidden": false,
+          "DateFrom": "2016-06-01T00:00:00",
+          "DateTo": "2016-06-30T23:59:59",
+          "HTMLEntrance": null,
+          "Sections": []
+        },
+        {
+          "Title": "Июль 2016",
+          "Description": null,
+          "Order": 1,
+          "Type": 1,
+          "Hidden": false,
+          "DateFrom": "2016-07-01T00:00:00",
+          "DateTo": "2016-07-31T23:59:59",
+          "HTMLEntrance": null,
+          "Sections": []
+        }
+      ]
+    },
+    {
+      "OrderIndex": 163,
+      "TitlePeriod": "Август 2016",
+      "TitleSeries": "Ретро-Румайности",
+      "TitleEdition": "В августе 16-го",
+      "LogoImageName": "GerbLegacy",
+      "DateFrom": "2016-08-01T00:00:00",
+      "DateTo": "2016-08-31T23:59:59",
+      "ReleaseDate": "0001-01-01T00:00:00",
+      "RumineLink": null,
+      "RumineNewsID": null,
+      "IsClassified": false,
+      "EntranceSection": {
+        "Title": "ВСТУПЛЕНИЕ",
+        "Description": null,
+        "Order": 0,
+        "Type": 0,
+        "Hidden": false,
+        "DateFrom": "2016-08-01T00:00:00",
+        "DateTo": "2016-08-31T23:59:59",
+        "HTMLEntrance": null,
+        "Sections": []
+      },
+      "EndingSection": {
+        "Title": "ЗАВЕРШЕНИЕ",
+        "Description": null,
+        "Order": 100,
+        "Type": 0,
+        "Hidden": false,
+        "DateFrom": "2016-08-01T00:00:00",
+        "DateTo": "2016-08-31T23:59:59",
+        "HTMLEntrance": null,
+        "Sections": []
+      },
+      "Tags": [
+        87,
+        88
+      ],
+      "NewsSections": [
+        {
+          "Title": "Август 2016",
+          "Description": "...",
+          "Order": 1,
+          "Type": 1,
+          "Hidden": false,
+          "DateFrom": "2016-08-01T00:00:00",
+          "DateTo": "2016-08-31T23:59:59",
+          "HTMLEntrance": null,
+          "Sections": []
+        }
+      ]
+    },
+    {
+      "OrderIndex": 164,
+      "TitlePeriod": "Конец 2016",
+      "TitleSeries": "Ретро-Румайности",
+      "TitleEdition": "Она развалилась",
+      "LogoImageName": "GerbLegacy",
+      "DateFrom": "2016-09-01T00:00:00",
+      "DateTo": "2016-12-31T23:59:59",
+      "ReleaseDate": "0001-01-01T00:00:00",
+      "RumineLink": null,
+      "RumineNewsID": null,
+      "IsClassified": false,
+      "EntranceSection": {
+        "Title": "ВСТУПЛЕНИЕ",
+        "Description": null,
+        "Order": 0,
+        "Type": 0,
+        "Hidden": false,
+        "DateFrom": "2016-09-01T00:00:00",
+        "DateTo": "2016-12-31T23:59:59",
+        "HTMLEntrance": null,
+        "Sections": []
+      },
+      "EndingSection": {
+        "Title": "ЗАВЕРШЕНИЕ",
+        "Description": null,
+        "Order": 100,
+        "Type": 0,
+        "Hidden": false,
+        "DateFrom": "2016-09-01T00:00:00",
+        "DateTo": "2016-12-31T23:59:59",
+        "HTMLEntrance": null,
+        "Sections": []
+      },
+      "Tags": [
+        87,
+        88
+      ],
+      "NewsSections": [
+        {
+          "Title": "Осень 2016",
+          "Description": null,
+          "Order": 1,
+          "Type": 1,
+          "Hidden": false,
+          "DateFrom": "2016-09-01T00:00:00",
+          "DateTo": "2016-12-31T23:59:59",
+          "HTMLEntrance": null,
+          "Sections": []
+        },
+        {
+          "Title": "Декабрь 2016",
+          "Description": null,
+          "Order": 1,
+          "Type": 1,
+          "Hidden": false,
+          "DateFrom": "2016-12-01T00:00:00",
+          "DateTo": "2016-12-31T23:59:59",
           "HTMLEntrance": null,
           "Sections": []
         }

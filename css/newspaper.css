@@ -127,6 +127,10 @@
 .page-newspaper .content-navigation {
     position: sticky;
     top: 1em;
+    overflow-y: auto;
+    max-height: 90vh;
+    overflow-x: hidden;
+    border-bottom: 1px solid silver;
 }
 .page-newspaper h2.content-navigation-header {
     font-family: var(--newspaper-headers-font);
@@ -144,13 +148,9 @@
     margin: 2px 8px;
 }
 .page-newspaper .nav-links-section {
-    overflow-y: auto;
-    overflow-x: hidden;
-    max-height: 88vh;
 }
 @media (max-device-width:480px) {
     .page-newspaper .nav-links-section {
-        max-height: 100%;
     }
 }
 
@@ -208,9 +208,6 @@
     margin: 0 4px;
 }
     .page-newspaper .details-navigation-edition-lists {
-        overflow-y: auto;
-        max-height: 70vh;
-        overflow-x: hidden;
     }
     .page-newspaper .details-navigation-editions details {
         padding: 0 12px;
@@ -514,8 +511,8 @@
     margin-left: 20px;
 }
 .page-newspaper .separate-quote blockquote {
-    margin-top: 14px;
-    margin-bottom: 14px;
+    margin-top: 8px;
+    margin-bottom: 8px;
     margin-left: var(--padding-left-meta);
     padding-top: 4px;
     padding-bottom: 4px;
@@ -633,17 +630,30 @@
 }
 
 .page-newspaper .stat-header-th {
-    text-align: left;
+    text-align: right;
     font-weight: normal;
     background-color: var(--newspaper-headers-background);
     border-bottom: 1px solid gainsboro;
     padding: 2px 4px;
     color: rgb(64,64,64);
 }
+.page-newspaper .stat-header-th.caption{
+    font-weight: 600;
+    text-align: left;
+}
 
 .page-newspaper .stat-user-td {
     min-width: 5em;
     padding: 0 4px;
+}
+.page-newspaper .stat-user-td .rumine-cite{
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    margin: 4px 0;
+}
+.page-newspaper .rumine-row td {
+    border-top: 1px solid gainsboro;
 }
 
     .page-newspaper .stat-user-td .user-cite-content {
@@ -657,19 +667,24 @@
     vertical-align: middle;
 }
 
-    .page-newspaper .stat-value-td.positive {
-        color: green;
-    }
-
-    .page-newspaper .stat-value-td.negative {
-        color: red;
-    }
-
 @media (max-device-width:480px) {
     .page-newspaper .stat-table {
         min-width: 75%;
         max-width: 100%;
     }
+}
+
+.page-newspaper img.stat-icon {
+    opacity: 0.8;
+
+    width: 12px;
+    height: 12px;
+    margin: 0 2px;
+}
+.page-newspaper .stat-header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 /* #endregion */
